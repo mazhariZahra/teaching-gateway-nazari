@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/grammer.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill" data-fa="گرامر" data-en="Grammar" data-fr="Grammaire">گرامر</span>
+                            <h1 class="fw-bold mb-3" data-fa="تفاوت‌های کلیدی بین Imparfait و Passé Composé" data-en="Key Differences Between Imparfait & Passé Composé" data-fr="Différences Clés entre l'Imparfait et le Passé Composé">تفاوت‌های کلیدی بین Imparfait و Passé Composé</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>👩‍🏫 <span data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</span></span>
+                                <span>📅 ۱۲ تیر ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۸ دقیقه مطالعه" data-en="8 min read" data-fr="8 min de lecture">۸ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="یکی از چالش‌برانگیزترین مباحث در یادگیری زبان فرانسه، تفاوت بین دو زمان گذشته Imparfait و Passé Composé است. بسیاری از زبان‌آموزان در انتخاب بین این دو زمان دچار سردرگمی می‌شوند. در این مقاله به زبان ساده و با مثال‌های کاربردی، تفاوت‌های این دو زمان را توضیح می‌دهیم." data-en="One of the most challenging topics in learning French is the difference between the two past tenses: Imparfait and Passé Composé. Many learners get confused when choosing between them. In this article, we explain the differences simply with practical examples." data-fr="L'un des sujets les plus difficiles dans l'apprentissage du français est la différence entre les deux temps du passé : l'Imparfait et le Passé Composé. De nombreux apprenants sont confus lorsqu'ils doivent choisir entre les deux. Dans cet article, nous expliquons les différences simplement avec des exemples pratiques.">یکی از چالش‌برانگیزترین مباحث در یادگیری زبان فرانسه، تفاوت بین دو زمان گذشته Imparfait و Passé Composé است. بسیاری از زبان‌آموزان در انتخاب بین این دو زمان دچار سردرگمی می‌شوند. در این مقاله به زبان ساده و با مثال‌های کاربردی، تفاوت‌های این دو زمان را توضیح می‌دهیم.</p>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="Imparfait چیست و چه زمانی استفاده می‌شود؟" data-en="What is Imparfait and When is it Used?" data-fr="Qu'est-ce que l'Imparfait et Quand l'Utiliser ?">Imparfait چیست و چه زمانی استفاده می‌شود؟</h3>
+                        
+                        <p class="text-secondary" data-fa="Imparfait برای توصیف موقعیت‌ها، عادت‌های گذشته، و اقدامات طولانی یا تکراری در گذشته استفاده می‌شود. این زمان معادل «I used to...» یا «I was ...ing» در انگلیسی است." data-en="Imparfait is used to describe situations, past habits, and long or repeated actions in the past. It is equivalent to 'I used to...' or 'I was ...ing' in English." data-fr="L'Imparfait est utilisé pour décrire des situations, des habitudes passées et des actions longues ou répétées dans le passé. Il équivaut à 'I used to...' ou 'I was ...ing' en anglais.">Imparfait برای توصیف موقعیت‌ها، عادت‌های گذشته، و اقدامات طولانی یا تکراری در گذشته استفاده می‌شود. این زمان معادل «I used to...» یا «I was ...ing» در انگلیسی است.</p>
+
+                        <div class="blog-example-box">
+                            <h6 class="fw-bold" data-fa="🔍 مثال‌ها:" data-en="🔍 Examples:" data-fr="🔍 Exemples :">🔍 مثال‌ها:</h6>
+                            <ul>
+                                <li><strong>Quand j'étais petit, je <u>jouais</u> au foot tous les jours.</strong><br><small class="text-secondary" data-fa="(وقتی کوچک بودم، هر روز فوتبال بازی می‌کردم)" data-en="(When I was little, I played football every day)" data-fr="(Quand j'étais petit, je jouais au foot tous les jours)">(وقتی کوچک بودم، هر روز فوتبال بازی می‌کردم)</small></li>
+                                <li><strong>Il <u>pleuvait</u> quand je suis sorti.</strong><br><small class="text-secondary" data-fa="(باران می‌بارید وقتی بیرون رفتم)" data-en="(It was raining when I went out)" data-fr="(Il pleuvait quand je suis sorti)">(باران می‌بارید وقتی بیرون رفتم)</small></li>
+                                <li><strong>Nous <u>habitions</u> à Paris à cette époque.</strong><br><small class="text-secondary" data-fa="(ما آن زمان در پاریس زندگی می‌کردیم)" data-en="(We lived in Paris at that time)" data-fr="(Nous habitions à Paris à cette époque)">(ما آن زمان در پاریس زندگی می‌کردیم)</small></li>
+                            </ul>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="Passé Composé چیست و چه زمانی استفاده می‌شود؟" data-en="What is Passé Composé and When is it Used?" data-fr="Qu'est-ce que le Passé Composé et Quand l'Utiliser ?">Passé Composé چیست و چه زمانی استفاده می‌شود؟</h3>
+                        
+                        <p class="text-secondary" data-fa="Passé Composé برای اقدامات کامل شده، اتفاقات خاص و لحظه‌ای در گذشته استفاده می‌شود. این زمان معادل «I did...» یا «I have done...» در انگلیسی است." data-en="Passé Composé is used for completed actions, specific events, and momentary actions in the past. It is equivalent to 'I did...' or 'I have done...' in English." data-fr="Le Passé Composé est utilisé pour des actions terminées, des événements spécifiques et des actions ponctuelles dans le passé. Il équivaut à 'I did...' ou 'I have done...' en anglais.">Passé Composé برای اقدامات کامل شده، اتفاقات خاص و لحظه‌ای در گذشته استفاده می‌شود. این زمان معادل «I did...» یا «I have done...» در انگلیسی است.</p>
+
+                        <div class="blog-example-box">
+                            <h6 class="fw-bold" data-fa="🔍 مثال‌ها:" data-en="🔍 Examples:" data-fr="🔍 Exemples :">🔍 مثال‌ها:</h6>
+                            <ul>
+                                <li><strong>Hier, j'<u>ai mangé</u> une pizza.</strong><br><small class="text-secondary" data-fa="(دیروز یک پیتزا خوردم)" data-en="(Yesterday, I ate a pizza)" data-fr="(Hier, j'ai mangé une pizza)">(دیروز یک پیتزا خوردم)</small></li>
+                                <li><strong>Elle <u>est arrivée</u> à 8 heures.</strong><br><small class="text-secondary" data-fa="(او ساعت ۸ رسید)" data-en="(She arrived at 8 o'clock)" data-fr="(Elle est arrivée à 8 heures)">(او ساعت ۸ رسید)</small></li>
+                                <li><strong>Nous <u>avons visité</u> la Tour Eiffel.</strong><br><small class="text-secondary" data-fa="(ما از برج ایفل بازدید کردیم)" data-en="(We visited the Eiffel Tower)" data-fr="(Nous avons visité la Tour Eiffel)">(ما از برج ایفل بازدید کردیم)</small></li>
+                            </ul>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="جدول مقایسه سریع" data-en="Quick Comparison Table" data-fr="Tableau de Comparaison Rapide">جدول مقایسه سریع</h3>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered comparison-table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th data-fa="ویژگی" data-en="Feature" data-fr="Caractéristique">ویژگی</th>
+                                        <th data-fa="Imparfait" data-en="Imparfait" data-fr="Imparfait">Imparfait</th>
+                                        <th data-fa="Passé Composé" data-en="Passé Composé" data-fr="Passé Composé">Passé Composé</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-fa="نوع اقدام" data-en="Action Type" data-fr="Type d'action">نوع اقدام</td>
+                                        <td data-fa="ادامه‌دار / تکراری" data-en="Continuous / Repeated" data-fr="Continue / Répétée">ادامه‌دار / تکراری</td>
+                                        <td data-fa="کامل شده / لحظه‌ای" data-en="Completed / Momentary" data-fr="Terminée / Ponctuelle">کامل شده / لحظه‌ای</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="معادل انگلیسی" data-en="English Equivalent" data-fr="Équivalent Anglais">معادل انگلیسی</td>
+                                        <td>I was doing / I used to do</td>
+                                        <td>I did / I have done</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="کلمات کلیدی" data-en="Key Words" data-fr="Mots Clés">کلمات کلیدی</td>
+                                        <td>tous les jours, souvent, toujours, pendant que...</td>
+                                        <td>hier, soudain, tout à coup, une fois...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="blog-tip-box">
+                            <h6 class="fw-bold" data-fa="💡 نکته طلایی:" data-en="💡 Golden Tip:" data-fr="💡 Astuce en Or :">💡 نکته طلایی:</h6>
+                            <p class="text-secondary mb-0" data-fa="اگر می‌خواهید پس‌زمینه یک داستان را توصیف کنید، از Imparfait استفاده کنید. اگر می‌خواهید بگویید چه اتفاقی افتاد، از Passé Composé استفاده کنید. Imparfait «صحنه» را می‌چیند و Passé Composé «اتفاق» را نشان می‌دهد." data-en="If you want to describe the background of a story, use Imparfait. If you want to say what happened, use Passé Composé. Imparfait sets the 'scene' and Passé Composé shows the 'event'." data-fr="Si vous voulez décrire l'arrière-plan d'une histoire, utilisez l'Imparfait. Si vous voulez dire ce qui s'est passé, utilisez le Passé Composé. L'Imparfait plante le 'décor' et le Passé Composé montre 'l'événement'.">اگر می‌خواهید پس‌زمینه یک داستان را توصیف کنید، از Imparfait استفاده کنید. اگر می‌خواهید بگویید چه اتفاقی افتاد، از Passé Composé استفاده کنید. Imparfait «صحنه» را می‌چیند و Passé Composé «اتفاق» را نشان می‌دهد.</p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#گرامر</a>
+                        <a href="#" class="tag-link">#Imparfait</a>
+                        <a href="#" class="tag-link">#Passé_Composé</a>
+                        <a href="#" class="tag-link">#آموزش_زبان</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">👩‍🏫</div>
+                            <div>
+                                <h6 class="fw-bold" data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</h6>
+                                <p class="text-secondary small" data-fa="مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص آموزش گرامر و آمادگی آزمون‌های DELF/DALF." data-en="Senior French instructor with 10 years of teaching experience. Specialist in grammar and DELF/DALF exam preparation." data-fr="Instructeur principal de français avec 10 ans d'expérience. Spécialiste en grammaire et préparation aux examens DELF/DALF.">مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص آموزش گرامر و آمادگی آزمون‌های DELF/DALF.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

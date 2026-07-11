@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود / ثبت‌نام | Teaching Gateway Nazari</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* ===== استایل‌های مخصوص صفحه لاگین ===== */
+        .login-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 30%, #16213e 60%, #0f3460 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* ذرات پس‌زمینه */
+        .bg-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .bg-particle {
+            position: absolute;
+            background: rgba(67, 97, 238, 0.4);
+            border-radius: 50%;
+            animation: floatParticle 10s infinite;
+        }
+
+        @keyframes floatParticle {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* دایره‌های تزئینی بزرگ */
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .bg-circle-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(67, 97, 238, 0.08) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+        }
+
+        .bg-circle-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(114, 9, 183, 0.08) 0%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+        }
+
+        .bg-circle-3 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 180, 216, 0.06) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* کارت اصلی */
+        .auth-wrapper {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
+        }
+
+        .auth-card:hover {
+            box-shadow: 0 40px 100px rgba(67, 97, 238, 0.2);
+        }
+
+        /* دکمه تغییر زبان */
+        .lang-switch-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch-wrapper .dropdown-menu {
+            background: rgba(30, 30, 50, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 8px;
+            min-width: 150px;
+        }
+
+        .lang-switch-wrapper .dropdown-item {
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px 15px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switch-wrapper .dropdown-item:hover {
+            background: rgba(67, 97, 238, 0.2);
+            color: white;
+        }
+
+        /* لوگو */
+        .auth-logo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .auth-logo .logo-text {
+            font-size: 1.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4361ee, #7209b7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        .auth-logo .logo-subtitle {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        /* تب‌های ورود/ثبت‌نام */
+        .auth-tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 5px;
+            margin-bottom: 30px;
+            gap: 5px;
+        }
+
+        .auth-tab {
+            flex: 1;
+            padding: 12px 20px;
+            text-align: center;
+            border-radius: 12px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+            transition: all 0.4s ease;
+            border: none;
+            background: transparent;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1rem;
+        }
+
+        .auth-tab.active {
+            background: rgba(67, 97, 238, 0.3);
+            color: white;
+            box-shadow: 0 5px 20px rgba(67, 97, 238, 0.2);
+        }
+
+        .auth-tab:hover:not(.active) {
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* فرم‌ها */
+        .auth-form {
+            display: none;
+            animation: fadeSlideIn 0.5s ease;
+        }
+
+        .auth-form.active {
+            display: block;
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-wrapper .input-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        html[dir="rtl"] .input-wrapper .input-icon {
+            right: 15px;
+        }
+
+        html[dir="ltr"] .input-wrapper .input-icon {
+            left: 15px;
+        }
+
+        .auth-input {
+            width: 100%;
+            padding: 14px 20px;
+            padding-right: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: white;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        html[dir="ltr"] .auth-input {
+            padding-right: 20px;
+            padding-left: 45px;
+        }
+
+        .auth-input:focus {
+            border-color: #4361ee;
+            box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.15);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .auth-input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* نمایش/مخفی کردن رمز */
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 2;
+            padding: 5px;
+            transition: all 0.3s ease;
+        }
+
+        html[dir="rtl"] .password-toggle {
+            left: 10px;
+        }
+
+        html[dir="ltr"] .password-toggle {
+            right: 10px;
+        }
+
+        .password-toggle:hover {
+            color: white;
+        }
+
+        /* چک باکس و لینک فراموشی */
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .remember-me input {
+            accent-color: #4361ee;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .forgot-link {
+            color: #4361ee;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .forgot-link:hover {
+            color: #7209b7;
+            text-decoration: underline;
+        }
+
+        /* دکمه اصلی */
+        .auth-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #4361ee, #7209b7);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(67, 97, 238, 0.4);
+        }
+
+        .auth-submit:active {
+            transform: translateY(-1px);
+        }
+
+        /* جداکننده */
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 25px 0;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.85rem;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* دکمه‌های اجتماعی */
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-btn.google:hover {
+            border-color: #ea4335;
+            box-shadow: 0 10px 25px rgba(234, 67, 53, 0.3);
+        }
+
+        .social-btn.github:hover {
+            border-color: #6e40c9;
+            box-shadow: 0 10px 25px rgba(110, 64, 201, 0.3);
+        }
+
+        /* لینک بازگشت */
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            color: white;
+        }
+
+        .back-home i {
+            margin: 0 5px;
+        }
+
+        /* متن‌های کمکی */
+        .auth-help {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        /* پیام خطا (پنهان پیش‌فرض) */
+        .error-message {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+            animation: shake 0.5s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        /* ریسپانسیو */
+        @media (max-width: 576px) {
+            .auth-card {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+            
+            .social-buttons {
+                flex-direction: column;
+            }
+            
+            .bg-circle-1 {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-page">
+        <!-- ذرات پس‌زمینه -->
+        <div class="bg-particles" id="bgParticles"></div>
+        
+        <!-- دایره‌های تزئینی -->
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+
+        <!-- کارت اصلی -->
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="lang-switch-wrapper">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-light btn-sm rounded-pill dropdown-toggle" data-bs-toggle="dropdown" id="langToggleBtn">
+                            🇮🇷 فارسی
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')">🇮🇷 فارسی</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- لوگو -->
+                <div class="auth-logo">
+                    <div class="logo-text">
+                        <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+                    </div>
+                </div>
+
+                <!-- پیام خطا -->
+                <div class="error-message" id="errorMessage">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    <span id="errorText"></span>
+                </div>
+
+                <!-- تب‌ها -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login" data-fa="ورود" data-en="Login" data-fr="Connexion">ورود</button>
+                    <button class="auth-tab" data-tab="register" data-fa="ثبت‌نام" data-en="Register" data-fr="Inscription">ثبت‌نام</button>
+                </div>
+
+                <!-- فرم ورود -->
+                <form class="auth-form active" id="loginForm">
+                    <div class="form-group">
+                        <label data-fa="ایمیل یا شماره موبایل" data-en="Email or Phone" data-fr="E-mail ou Téléphone">ایمیل یا شماره موبایل</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-person input-icon"></i>
+                            <input type="text" class="auth-input" placeholder="example@email.com" id="loginEmail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-fa="رمز عبور" data-en="Password" data-fr="Mot de passe">رمز عبور</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock input-icon"></i>
+                            <input type="password" class="auth-input" placeholder="••••••••" id="loginPassword">
+                            <button type="button" class="password-toggle" onclick="togglePassword('loginPassword', this)">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span data-fa="مرا به خاطر بسپار" data-en="Remember me" data-fr="Se souvenir de moi">مرا به خاطر بسپار</span>
+                        </label>
+                        <a href="#" class="forgot-link" data-fa="رمز عبور را فراموش کردید؟" data-en="Forgot password?" data-fr="Mot de passe oublié ?">رمز عبور را فراموش کردید؟</a>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        <span data-fa="ورود به حساب" data-en="Sign In" data-fr="Se connecter">ورود به حساب</span>
+                    </button>
+                </form>
+
+                <!-- فرم ثبت‌نام -->
+                <form class="auth-form" id="registerForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-group mb-0">
+                                <label data-fa="نام" data-en="First Name" data-fr="Prénom">نام</label>
+                                <input type="text" class="auth-input" placeholder="علی" id="regFirstName">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-0">
+                                <label data-fa="نام خانوادگی" data-en="Last Name" data-fr="Nom">نام خانوادگی</label>
+                                <input type="text" class="auth-input" placeholder="محمدی" id="regLastName">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label data-fa="ایمیل" data-en="Email" data-fr="E-mail">ایمیل</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-envelope input-icon"></i>
+                            <input type="email" class="auth-input" placeholder="example@email.com" id="regEmail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-fa="شماره موبایل" data-en="Phone Number" data-fr="Numéro de téléphone">شماره موبایل</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-phone input-icon"></i>
+                            <input type="tel" class="auth-input" placeholder="۰۹۱۲۳۴۵۶۷۸۹" id="regPhone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-fa="رمز عبور" data-en="Password" data-fr="Mot de passe">رمز عبور</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock input-icon"></i>
+                            <input type="password" class="auth-input" placeholder="حداقل ۸ کاراکتر" id="regPassword">
+                            <button type="button" class="password-toggle" onclick="togglePassword('regPassword', this)">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                        <p class="auth-help" data-fa="رمز عبور باید حداقل ۸ کاراکتر باشد" data-en="Password must be at least 8 characters" data-fr="Le mot de passe doit comporter au moins 8 caractères">رمز عبور باید حداقل ۸ کاراکتر باشد</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-fa="تکرار رمز عبور" data-en="Confirm Password" data-fr="Confirmer le mot de passe">تکرار رمز عبور</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-lock-fill input-icon"></i>
+                            <input type="password" class="auth-input" placeholder="••••••••" id="regConfirmPassword">
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="agreeTerms">
+                            <span>
+                                <span data-fa="با " data-en="I agree to the " data-fr="J'accepte les ">با </span>
+                                <a href="#" style="color: #4361ee;" data-fa="قوانین و مقررات" data-en="Terms & Conditions" data-fr="Conditions générales">قوانین و مقررات</a>
+                                <span data-fa=" موافقم" data-en="" data-fr=""> موافقم</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        <span data-fa="ایجاد حساب کاربری" data-en="Create Account" data-fr="Créer un compte">ایجاد حساب کاربری</span>
+                    </button>
+                </form>
+
+                <!-- لینک بازگشت -->
+                <a href="index.html" class="back-home">
+                    <i class="bi bi-arrow-right"></i>
+                    <span data-fa="بازگشت به صفحه اصلی" data-en="Back to Home" data-fr="Retour à l'accueil">بازگشت به صفحه اصلی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // ===== سیستم تغییر زبان =====
+        let currentLang = localStorage.getItem('lingua-lang') || 'fa';
+
+        const langData = {
+            fa: { flag: '🇮🇷', name: 'فارسی' },
+            en: { flag: '🇬🇧', name: 'English' },
+            fr: { flag: '🇫🇷', name: 'Français' }
+        };
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // آپدیت دکمه
+            const langBtn = document.getElementById('langToggleBtn');
+            if (langBtn) {
+                langBtn.innerHTML = `${langData[lang].flag} ${langData[lang].name}`;
+            }
+            
+            // تغییر جهت HTML
+            if (lang === 'fa') {
+                document.getElementById('htmlRoot').lang = 'fa';
+                document.getElementById('htmlRoot').dir = 'rtl';
+            } else {
+                document.getElementById('htmlRoot').lang = lang;
+                document.getElementById('htmlRoot').dir = 'ltr';
+            }
+            
+            // تغییر متن‌ها
+            document.querySelectorAll('[data-fa][data-en][data-fr]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.innerHTML = text;
+            });
+            
+            localStorage.setItem('lingua-lang', lang);
+        }
+
+        // اعمال زبان ذخیره شده در ابتدا
+        document.addEventListener('DOMContentLoaded', function() {
+            if (currentLang !== 'fa') {
+                setLanguage(currentLang);
+            }
+        });
+
+        // ===== تولید ذرات پس‌زمینه =====
+        const particlesContainer = document.getElementById('bgParticles');
+        
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('bg-particle');
+            
+            const size = Math.random() * 4 + 1;
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            const delay = Math.random() * 10;
+            const duration = Math.random() * 8 + 6;
+            
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = posX + '%';
+            particle.style.top = posY + '%';
+            particle.style.animationDelay = delay + 's';
+            particle.style.animationDuration = duration + 's';
+            
+            particlesContainer.appendChild(particle);
+        }
+
+        // ===== تب‌های ورود/ثبت‌نام =====
+        const tabs = document.querySelectorAll('.auth-tab');
+        const forms = document.querySelectorAll('.auth-form');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                forms.forEach(f => f.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const targetForm = document.getElementById(tab.dataset.tab + 'Form');
+                if (targetForm) {
+                    targetForm.classList.add('active');
+                }
+                
+                hideError();
+            });
+        });
+
+        // ===== نمایش/مخفی کردن رمز عبور =====
+        function togglePassword(inputId, btn) {
+            const input = document.getElementById(inputId);
+            const icon = btn.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('bi-eye');
+                icon.classList.add('bi-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('bi-eye-slash');
+                icon.classList.add('bi-eye');
+            }
+        }
+
+        // ===== نمایش خطا (سه زبانه) =====
+        function showError(msgFa, msgEn, msgFr) {
+            const errorDiv = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            
+            let msg;
+            if (currentLang === 'fa') msg = msgFa;
+            else if (currentLang === 'en') msg = msgEn;
+            else msg = msgFr;
+            
+            errorText.textContent = msg;
+            errorDiv.classList.add('show');
+            
+            setTimeout(hideError, 5000);
+        }
+
+        function hideError() {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.classList.remove('show');
+        }
+
+        // ===== اعتبارسنجی ایمیل =====
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // ===== اعتبارسنجی موبایل ایرانی =====
+        function isValidPhone(phone) {
+            return /^09\d{9}$/.test(phone.replace(/-/g, ''));
+        }
+
+        // ===== مدیریت فرم ورود =====
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value;
+            
+            if (!email) {
+                showError(
+                    'لطفاً ایمیل یا شماره موبایل را وارد کنید.',
+                    'Please enter your email or phone number.',
+                    'Veuillez entrer votre e-mail ou numéro de téléphone.'
+                );
+                return;
+            }
+            
+            if (!password) {
+                showError(
+                    'لطفاً رمز عبور را وارد کنید.',
+                    'Please enter your password.',
+                    'Veuillez entrer votre mot de passe.'
+                );
+                return;
+            }
+            
+            if (password.length < 6) {
+                showError(
+                    'رمز عبور باید حداقل ۶ کاراکتر باشد.',
+                    'Password must be at least 6 characters.',
+                    'Le mot de passe doit comporter au moins 6 caractères.'
+                );
+                return;
+            }
+            
+            const submitBtn = this.querySelector('.auth-submit');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + 
+                (currentLang === 'fa' ? 'در حال ورود...' : currentLang === 'en' ? 'Signing in...' : 'Connexion en cours...');
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert(currentLang === 'fa' ? '✅ ورود موفقیت‌آمیز!' : currentLang === 'en' ? '✅ Login Successful!' : '✅ Connexion réussie !');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+
+        // ===== مدیریت فرم ثبت‌نام =====
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('regFirstName').value.trim();
+            const lastName = document.getElementById('regLastName').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const phone = document.getElementById('regPhone').value.trim();
+            const password = document.getElementById('regPassword').value;
+            const confirmPassword = document.getElementById('regConfirmPassword').value;
+            const agreeTerms = document.getElementById('agreeTerms').checked;
+            
+            if (!firstName || !lastName) {
+                showError(
+                    'لطفاً نام و نام خانوادگی را وارد کنید.',
+                    'Please enter your first and last name.',
+                    'Veuillez entrer votre prénom et nom.'
+                );
+                return;
+            }
+            
+            if (!email && !phone) {
+                showError(
+                    'لطفاً ایمیل یا شماره موبایل را وارد کنید.',
+                    'Please enter your email or phone number.',
+                    'Veuillez entrer votre e-mail ou numéro de téléphone.'
+                );
+                return;
+            }
+            
+            if (email && !isValidEmail(email)) {
+                showError(
+                    'لطفاً یک ایمیل معتبر وارد کنید.',
+                    'Please enter a valid email address.',
+                    'Veuillez entrer une adresse e-mail valide.'
+                );
+                return;
+            }
+            
+            if (phone && !isValidPhone(phone)) {
+                showError(
+                    'لطفاً یک شماره موبایل معتبر وارد کنید (مثال: ۰۹۱۲۳۴۵۶۷۸۹).',
+                    'Please enter a valid phone number (e.g. +98 912 345 6789).',
+                    'Veuillez entrer un numéro de téléphone valide (ex: +98 912 345 6789).'
+                );
+                return;
+            }
+            
+            if (!password) {
+                showError(
+                    'لطفاً رمز عبور را وارد کنید.',
+                    'Please enter a password.',
+                    'Veuillez entrer un mot de passe.'
+                );
+                return;
+            }
+            
+            if (password.length < 8) {
+                showError(
+                    'رمز عبور باید حداقل ۸ کاراکتر باشد.',
+                    'Password must be at least 8 characters.',
+                    'Le mot de passe doit comporter au moins 8 caractères.'
+                );
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                showError(
+                    'رمز عبور و تکرار آن مطابقت ندارند.',
+                    'Passwords do not match.',
+                    'Les mots de passe ne correspondent pas.'
+                );
+                return;
+            }
+            
+            if (!agreeTerms) {
+                showError(
+                    'لطفاً با قوانین و مقررات موافقت کنید.',
+                    'Please agree to the Terms & Conditions.',
+                    'Veuillez accepter les Conditions générales.'
+                );
+                return;
+            }
+            
+            const submitBtn = this.querySelector('.auth-submit');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + 
+                (currentLang === 'fa' ? 'در حال ثبت‌نام...' : currentLang === 'en' ? 'Registering...' : 'Inscription en cours...');
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert(currentLang === 'fa' ? '✅ ثبت‌نام موفقیت‌آمیز!\n\nبه Teaching Gateway Nazari خوش آمدید!' : 
+                      currentLang === 'en' ? '✅ Registration Successful!\n\nWelcome to Teaching Gateway Nazari!' : 
+                      '✅ Inscription réussie !\n\nBienvenue chez Teaching Gateway Nazari !');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

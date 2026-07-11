@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+    <!-- ===== بنر بالای صفحه ===== -->
+    <section class="page-banner d-flex align-items-center" data-aos="fade-down">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3" data-fa="تماس با ما" data-en="Contact Us" data-fr="Contactez-nous">تماس با ما</h1>
+            <p class="lead text-secondary" data-fa="ما همیشه آماده پاسخگویی به سوالات شما هستیم" data-en="We are always ready to answer your questions" data-fr="Nous sommes toujours prêts à répondre à vos questions">ما همیشه آماده پاسخگویی به سوالات شما هستیم</p>
+        </div>
+    </section>
+
+    <!-- ===== بخش اصلی تماس ===== -->
+    <section class="contact-main py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- اطلاعات تماس -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill" data-fa="اطلاعات تماس" data-en="Contact Info" data-fr="Coordonnées">اطلاعات تماس</span>
+                    <h2 class="fw-bold mb-4" data-fa="از هر راهی که راحت‌تر هستی با ما در ارتباط باش" data-en="Get in touch with us however you prefer" data-fr="Contactez-nous comme vous préférez">از هر راهی که راحت‌تر هستی با ما در ارتباط باش</h2>
+                    <p class="text-secondary mb-5" data-fa="تیم پشتیبانی ما همه روزه از ساعت ۸ صبح تا ۱۰ شب آماده پاسخگویی به شما عزیزان است." data-en="Our support team is available every day from 8 AM to 10 PM to assist you." data-fr="Notre équipe d'assistance est disponible tous les jours de 8h à 22h pour vous aider.">تیم پشتیبانی ما همه روزه از ساعت ۸ صبح تا ۱۰ شب آماده پاسخگویی به شما عزیزان است.</p>
+                    
+                    <div class="contact-info-list">
+                        <!-- تلفن -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon bg-primary-subtle text-primary">
+                                <i class="bi bi-telephone-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1" data-fa="تلفن" data-en="Phone" data-fr="Téléphone">تلفن</h6>
+                                <p class="text-secondary mb-0">۰۲۱-۸۸۶۹۹۳۸۱</p>
+                            </div>
+                        </div>
+                        
+                        <!-- ایمیل -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon bg-success-subtle text-success">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1" data-fa="ایمیل" data-en="Email" data-fr="E-mail">ایمیل</h6>
+                                <p class="text-secondary mb-0">info@teachinggatewaynazari.ir</p>
+                            </div>
+                        </div>
+                        
+                        <!-- آدرس -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon bg-warning-subtle text-warning">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1" data-fa="آدرس" data-en="Address" data-fr="Adresse">آدرس</h6>
+                                <p data-fa="آدرس: شهرک غرب،بلوار فرحزادی،روبروی اریکه ایرانیان، کوچه عباس اناری،پلاک99،طبقه سوم واحد 12" data-en="Address: West Town, Farahzadi Boulevard, opposite Iranian Arike, Abbas Anari Alley, No. 99, 3rd floor, Unit 12" data-fr="Adresse : West Town, Farahzadi Boulevard, en face d'Iranian Arike, Abbas Anari Alley, n° 99, 3e étage, unité 12">آدرس: شهرک غرب،بلوار فرحزادی،روبروی اریکه ایرانیان، کوچه عباس اناری،پلاک99،طبقه سوم واحد 12</p>
+                            </div>
+                        </div>
+                        
+                        <!-- ساعات کاری -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon bg-danger-subtle text-danger">
+                                <i class="bi bi-clock-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1" data-fa="ساعات کاری" data-en="Working Hours" data-fr="Heures d'ouverture">ساعات کاری</h6>
+                                <p class="text-secondary mb-0" data-fa="شنبه تا پنجشنبه: ۸ صبح تا ۱۰ شب" data-en="Saturday to Thursday: 8 AM - 10 PM" data-fr="Du samedi au jeudi : 8h - 22h">شنبه تا پنجشنبه: ۸ صبح تا ۱۰ شب</p>
+                                <p class="text-secondary mb-0" data-fa="جمعه: ۱۰ صبح تا ۶ عصر" data-en="Friday: 10 AM - 6 PM" data-fr="Vendredi : 10h - 18h">جمعه: ۱۰ صبح تا ۶ عصر</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- فرم تماس -->
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="contact-form-card">
+                        <h3 class="fw-bold mb-4" data-fa="برای ما پیام بفرستید" data-en="Send Us a Message" data-fr="Envoyez-nous un message">برای ما پیام بفرستید</h3>
+                        
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="نام و نام خانوادگی" data-en="Full Name" data-fr="Nom complet">نام و نام خانوادگی</label>
+                                    <div class="input-group-custom">
+                                        <i class="bi bi-person"></i>
+                                        <input type="text" class="form-control" data-fa-placeholder="مثال: علی محمدی" data-en-placeholder="e.g. Ali Mohammadi" data-fr-placeholder="ex: Ali Mohammadi" placeholder="مثال: علی محمدی" id="contactName">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="ایمیل" data-en="Email" data-fr="E-mail">ایمیل</label>
+                                    <div class="input-group-custom">
+                                        <i class="bi bi-envelope"></i>
+                                        <input type="email" class="form-control" data-fa-placeholder="example@email.com" data-en-placeholder="example@email.com" data-fr-placeholder="exemple@email.com" placeholder="example@email.com" id="contactEmail">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="شماره تماس" data-en="Phone Number" data-fr="Numéro de téléphone">شماره تماس</label>
+                                    <div class="input-group-custom">
+                                        <i class="bi bi-phone"></i>
+                                        <input type="tel" class="form-control" data-fa-placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹" data-en-placeholder="e.g. +98 912 345 6789" data-fr-placeholder="ex: +98 912 345 6789" placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹" id="contactPhone">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="موضوع" data-en="Subject" data-fr="Sujet">موضوع</label>
+                                    <div class="input-group-custom">
+                                        <i class="bi bi-tag"></i>
+                                        <select class="form-control" id="contactSubject">
+                                            <option value="" data-fa="انتخاب موضوع..." data-en="Select subject..." data-fr="Sélectionner un sujet...">انتخاب موضوع...</option>
+                                            <option value="courses" data-fa="دوره‌های آموزشی" data-en="Educational Courses" data-fr="Cours de formation">دوره‌های آموزشی</option>
+                                            <option value="support" data-fa="پشتیبانی فنی" data-en="Technical Support" data-fr="Assistance technique">پشتیبانی فنی</option>
+                                            <option value="suggestion" data-fa="پیشنهادات و انتقادات" data-en="Suggestions & Feedback" data-fr="Suggestions et commentaires">پیشنهادات و انتقادات</option>
+                                            <option value="other" data-fa="سایر موارد" data-en="Other" data-fr="Autres">سایر موارد</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <label class="form-label fw-medium" data-fa="پیام شما" data-en="Your Message" data-fr="Votre message">پیام شما</label>
+                                    <div class="input-group-custom textarea-group">
+                                        <i class="bi bi-chat-dots"></i>
+                                        <textarea class="form-control" rows="5" data-fa-placeholder="پیام خود را اینجا بنویسید..." data-en-placeholder="Write your message here..." data-fr-placeholder="Écrivez votre message ici..." placeholder="پیام خود را اینجا بنویسید..." id="contactMessage"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contactAgree">
+                                        <label class="form-check-label text-secondary" for="contactAgree" data-fa="با ذخیره اطلاعات من مطابق با قوانین حریم خصوصی موافقم." data-en="I agree to the storage of my data in accordance with the privacy policy." data-fr="J'accepte la conservation de mes données conformément à la politique de confidentialité.">با ذخیره اطلاعات من مطابق با قوانین حریم خصوصی موافقم.</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" data-fa="ارسال پیام" data-en="Send Message" data-fr="Envoyer le message">
+                                        <span data-fa="ارسال پیام" data-en="Send Message" data-fr="Envoyer le message">ارسال پیام</span>
+                                        <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== سوالات متداول ===== -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</span>
+                <h2 class="fw-bold" data-fa="سوالات پرتکرار شما" data-en="Frequently Asked Questions" data-fr="Questions fréquemment posées">سوالات پرتکرار شما</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion custom-accordion" id="faqAccordion">
+                        
+                        <!-- سوال ۱ -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <span data-fa="چگونه می‌توانم در دوره‌ها ثبت‌نام کنم؟" data-en="How can I register for courses?" data-fr="Comment puis-je m'inscrire aux cours ?">چگونه می‌توانم در دوره‌ها ثبت‌نام کنم؟</span>
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary" data-fa="برای ثبت‌نام کافیست به صفحه ورود/ثبت‌نام مراجعه کنید، حساب کاربری ایجاد کنید و دوره مورد نظر خود را انتخاب نمایید. همچنین می‌توانید با شماره ۰۲۱-۸۸۶۹۹۳۸۱ تماس بگیرید." data-en="To register, simply go to the Login/Register page, create an account, and select your desired course. You can also call 021-88699381." data-fr="Pour vous inscrire, rendez-vous simplement sur la page Connexion/Inscription, créez un compte et sélectionnez le cours souhaité. Vous pouvez également appeler le 021-88699381.">برای ثبت‌نام کافیست به صفحه ورود/ثبت‌نام مراجعه کنید، حساب کاربری ایجاد کنید و دوره مورد نظر خود را انتخاب نمایید. همچنین می‌توانید با شماره ۰۲۱-۸۸۶۹۹۳۸۱ تماس بگیرید.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- سوال ۲ -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <span data-fa="آیا کلاس‌ها به صورت آنلاین هم برگزار می‌شوند؟" data-en="Are classes held online as well?" data-fr="Les cours sont-ils également dispensés en ligne ?">آیا کلاس‌ها به صورت آنلاین هم برگزار می‌شوند؟</span>
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary" data-fa="بله، تمامی دوره‌های ما به دو صورت حضوری و آنلاین برگزار می‌شوند. شما می‌توانید هنگام ثبت‌نام، روش مورد نظر خود را انتخاب کنید." data-en="Yes, all our courses are held both in-person and online. You can choose your preferred method during registration." data-fr="Oui, tous nos cours sont dispensés en présentiel et en ligne. Vous pouvez choisir la méthode de votre choix lors de l'inscription.">بله، تمامی دوره‌های ما به دو صورت حضوری و آنلاین برگزار می‌شوند. شما می‌توانید هنگام ثبت‌نام، روش مورد نظر خود را انتخاب کنید.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- سوال ۳ -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <span data-fa="مدارک پایان دوره معتبر هستند؟" data-en="Are the certificates valid?" data-fr="Les certificats sont-ils valides ?">مدارک پایان دوره معتبر هستند؟</span>
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary" data-fa="بله، تمامی مدارک ما مورد تأیید سفارتخانه‌ها و دانشگاه‌های معتبر بین‌المللی می‌باشند." data-en="Yes, all our certificates are approved by embassies and reputable international universities." data-fr="Oui, tous nos certificats sont approuvés par les ambassades et les universités internationales réputées.">بله، تمامی مدارک ما مورد تأیید سفارتخانه‌ها و دانشگاه‌های معتبر بین‌المللی می‌باشند.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- سوال ۴ -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <span data-fa="آیا امکان پرداخت اقساطی وجود دارد؟" data-en="Is installment payment available?" data-fr="Le paiement échelonné est-il possible ?">آیا امکان پرداخت اقساطی وجود دارد؟</span>
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary" data-fa="بله، ما شرایط پرداخت اقساطی برای تمامی دوره‌ها فراهم کرده‌ایم. برای اطلاعات بیشتر با بخش مالی تماس بگیرید." data-en="Yes, we provide installment payment options for all courses. Contact the finance department for more information." data-fr="Oui, nous proposons des facilités de paiement échelonné pour tous les cours. Contactez le service financier pour plus d'informations.">بله، ما شرایط پرداخت اقساطی برای تمامی دوره‌ها فراهم کرده‌ایم. برای اطلاعات بیشتر با بخش مالی تماس بگیرید.</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa="پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en="Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

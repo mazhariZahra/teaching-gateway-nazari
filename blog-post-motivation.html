@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/motivation.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-danger mb-3 px-3 py-2 rounded-pill" data-fa="انگیزه" data-en="Motivation" data-fr="Motivation">انگیزه</span>
+                            <h1 class="fw-bold mb-3" data-fa="چطور انگیزه یادگیری زبان فرانسه را حفظ کنیم؟" data-en="How to Stay Motivated Learning French?" data-fr="Comment Rester Motivé pour Apprendre le Français ?">چطور انگیزه یادگیری زبان فرانسه را حفظ کنیم؟</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>👩‍🏫 <span data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</span></span>
+                                <span>📅 ۲۰ خرداد ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۱۱ دقیقه مطالعه" data-en="11 min read" data-fr="11 min de lecture">۱۱ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="همه ما در مسیر یادگیری زبان با افت انگیزه مواجه می‌شویم. آن شور و اشتیاق روزهای اول کم‌کم فروکش می‌کند و ممکن است دلسرد شویم. اما نگران نباشید! این کاملاً طبیعی است. در این مقاله، راهکارهای عملی و اثبات‌شده برای حفظ و بازیابی انگیزه در یادگیری زبان فرانسه را با شما به اشتراک می‌گذاریم." data-en="We all face motivation drops in language learning. The initial enthusiasm gradually fades and we may become discouraged. But don't worry! This is completely normal. In this article, we share practical, proven strategies to maintain and recover motivation in learning French." data-fr="Nous faisons tous face à des baisses de motivation dans l'apprentissage des langues. L'enthousiasme initial s'estompe progressivement et nous pouvons nous décourager. Mais ne vous inquiétez pas ! C'est tout à fait normal. Dans cet article, nous partageons des stratégies pratiques et éprouvées pour maintenir et retrouver la motivation dans l'apprentissage du français.">همه ما در مسیر یادگیری زبان با افت انگیزه مواجه می‌شویم. آن شور و اشتیاق روزهای اول کم‌کم فروکش می‌کند و ممکن است دلسرد شویم. اما نگران نباشید! این کاملاً طبیعی است. در این مقاله، راهکارهای عملی و اثبات‌شده برای حفظ و بازیابی انگیزه در یادگیری زبان فرانسه را با شما به اشتراک می‌گذاریم.</p>
+
+                        <!-- راهکار ۱ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۱</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="هدف خود را شفاف و شخصی کنید" data-en="Make Your Goal Clear & Personal" data-fr="Rendez Votre Objectif Clair et Personnel">هدف خود را شفاف و شخصی کنید</h4>
+                                <p class="text-secondary" data-fa="اهداف مبهم مثل «می‌خواهم فرانسه یاد بگیرم» انگیزه‌بخش نیستند. به جای آن، هدف خود را دقیق و شخصی کنید: «می‌خواهم تا ۶ ماه دیگر بتوانم فیلم‌های فرانسوی را بدون زیرنویس ببینم» یا «می‌خواهم در سفر بعدی به پاریس بتوانم در رستوران غذا سفارش دهم». هدف را روی کاغذ بنویسید و جایی بچسبانید که هر روز ببینید." data-en="Vague goals like 'I want to learn French' aren't motivating. Instead, make your goal specific and personal: 'I want to watch French movies without subtitles in 6 months' or 'I want to order food at a restaurant on my next trip to Paris'. Write your goal on paper and stick it somewhere you'll see every day." data-fr="Les objectifs vagues comme « Je veux apprendre le français » ne sont pas motivants. Rendez plutôt votre objectif précis et personnel : « Je veux pouvoir regarder des films français sans sous-titres dans 6 mois » ou « Je veux pouvoir commander au restaurant lors de mon prochain voyage à Paris ». Écrivez votre objectif sur papier et affichez-le là où vous le verrez chaque jour.">اهداف مبهم مثل «می‌خواهم فرانسه یاد بگیرم» انگیزه‌بخش نیستند. به جای آن، هدف خود را دقیق و شخصی کنید: «می‌خواهم تا ۶ ماه دیگر بتوانم فیلم‌های فرانسوی را بدون زیرنویس ببینم» یا «می‌خواهم در سفر بعدی به پاریس بتوانم در رستوران غذا سفارش دهم». هدف را روی کاغذ بنویسید و جایی بچسبانید که هر روز ببینید.</p>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۲ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۲</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="پیروزی‌های کوچک را جشن بگیرید" data-en="Celebrate Small Wins" data-fr="Célébrez les Petites Victoires">پیروزی‌های کوچک را جشن بگیرید</h4>
+                                <p class="text-secondary" data-fa="یادگیری زبان یک ماراتن است، نه دو سرعت. به جای تمرکز بر مقصد نهایی، از موفقیت‌های کوچک لذت ببرید: اولین جمله کامل، اولین مکالمه، اولین فیلم بدون زیرنویس. یک دفترچه پیشرفت داشته باشید و هر هفته موفقیت‌هایتان را یادداشت کنید." data-en="Language learning is a marathon, not a sprint. Instead of focusing on the final destination, enjoy small successes: your first complete sentence, first conversation, first movie without subtitles. Keep a progress journal and note your achievements each week." data-fr="L'apprentissage des langues est un marathon, pas un sprint. Au lieu de vous concentrer sur la destination finale, profitez des petits succès : votre première phrase complète, première conversation, premier film sans sous-titres. Tenez un journal de progression et notez vos réussites chaque semaine.">یادگیری زبان یک ماراتن است، نه دو سرعت. به جای تمرکز بر مقصد نهایی، از موفقیت‌های کوچک لذت ببرید: اولین جمله کامل، اولین مکالمه، اولین فیلم بدون زیرنویس. یک دفترچه پیشرفت داشته باشید و هر هفته موفقیت‌هایتان را یادداشت کنید.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="✅ چک‌لیست پیشنهادی:" data-en="✅ Suggested Checklist:" data-fr="✅ Liste de Contrôle Suggérée :">✅ چک‌لیست پیشنهادی:</h6>
+                                    <ul>
+                                        <li data-fa="خودم را به فرانسه معرفی کردم" data-en="Introduced myself in French" data-fr="Je me suis présenté(e) en français">خودم را به فرانسه معرفی کردم</li>
+                                        <li data-fa="یک غذای فرانسوی سفارش دادم" data-en="Ordered a French meal" data-fr="J'ai commandé un repas français">یک غذای فرانسوی سفارش دادم</li>
+                                        <li data-fa="یک آهنگ فرانسوی را کامل خواندم" data-en="Sang a whole French song" data-fr="J'ai chanté toute une chanson française">یک آهنگ فرانسوی را کامل خواندم</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۳ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۳</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="یادگیری را سرگرم‌کننده کنید" data-en="Make Learning Fun" data-fr="Rendez l'Apprentissage Amusant">یادگیری را سرگرم‌کننده کنید</h4>
+                                <p class="text-secondary" data-fa="اگر یادگیری برایتان خسته‌کننده شده، روش را عوض کنید! به جای کتاب درسی، بازی کنید. اپلیکیشن‌هایی مثل Duolingo و Memrise یادگیری را مثل بازی می‌کنند. فیلم و سریال فرانسوی تماشا کنید، موسیقی گوش دهید، یا حتی دستور پخت غذاهای فرانسوی را دنبال کنید." data-en="If learning has become boring, change the method! Instead of textbooks, play games. Apps like Duolingo and Memrise make learning like a game. Watch French movies and series, listen to music, or even follow French recipes." data-fr="Si l'apprentissage est devenu ennuyeux, changez de méthode ! Au lieu de manuels, jouez à des jeux. Des applications comme Duolingo et Memrise rendent l'apprentissage ludique. Regardez des films et séries français, écoutez de la musique, ou suivez même des recettes françaises.">اگر یادگیری برایتان خسته‌کننده شده، روش را عوض کنید! به جای کتاب درسی، بازی کنید. اپلیکیشن‌هایی مثل Duolingo و Memrise یادگیری را مثل بازی می‌کنند. فیلم و سریال فرانسوی تماشا کنید، موسیقی گوش دهید، یا حتی دستور پخت غذاهای فرانسوی را دنبال کنید.</p>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۴ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۴</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="یک روتین منعطف بسازید" data-en="Build a Flexible Routine" data-fr="Créez une Routine Flexible">یک روتین منعطف بسازید</h4>
+                                <p class="text-secondary" data-fa="روتین سفت و سخت «هر روز ۲ ساعت مطالعه» را فراموش کنید! این روش به سرعت خسته‌کننده می‌شود. به جای آن، یک روتین منعطف داشته باشید: «هر روز حداقل ۱۵ دقیقه فرانسه را به زندگی من وارد می‌شود». این ۱۵ دقیقه می‌تواند پادکست، فلش کارت، یا خواندن یک مقاله کوتاه باشد." data-en="Forget the rigid routine of '2 hours of study every day'! This quickly becomes exhausting. Instead, have a flexible routine: 'Every day, at least 15 minutes of French enters my life'. These 15 minutes can be a podcast, flashcards, or reading a short article." data-fr="Oubliez la routine rigide de « 2 heures d'étude par jour » ! Cela devient rapidement épuisant. Ayez plutôt une routine flexible : « Chaque jour, au moins 15 minutes de français entrent dans ma vie ». Ces 15 minutes peuvent être un podcast, des cartes mémoire, ou la lecture d'un court article.">روتین سفت و سخت «هر روز ۲ ساعت مطالعه» را فراموش کنید! این روش به سرعت خسته‌کننده می‌شود. به جای آن، یک روتین منعطف داشته باشید: «هر روز حداقل ۱۵ دقیقه فرانسه را به زندگی من وارد می‌شود». این ۱۵ دقیقه می‌تواند پادکست، فلش کارت، یا خواندن یک مقاله کوتاه باشد.</p>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۵ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۵</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="با فرهنگ فرانسه عاشق شوید" data-en="Fall in Love with French Culture" data-fr="Tombez Amoureux de la Culture Française">با فرهنگ فرانسه عاشق شوید</h4>
+                                <p class="text-secondary" data-fa="زبان فقط یک ابزار ارتباطی نیست، بلکه دریچه‌ای به یک فرهنگ کامل است. آشپزی فرانسوی یاد بگیرید، تاریخ فرانسه را مطالعه کنید، اخبار فرانسه را دنبال کنید. وقتی عاشق فرهنگ یک کشور شوید، یادگیری زبانش دیگر یک «تکلیف» نیست، بلکه یک «لذت» است." data-en="Language isn't just a communication tool, but a window to an entire culture. Learn French cooking, study French history, follow French news. When you fall in love with a country's culture, learning its language is no longer a 'chore' but a 'pleasure'." data-fr="La langue n'est pas seulement un outil de communication, mais une fenêtre sur toute une culture. Apprenez la cuisine française, étudiez l'histoire de France, suivez l'actualité française. Lorsque vous tombez amoureux de la culture d'un pays, apprendre sa langue n'est plus une « corvée » mais un « plaisir ».">زبان فقط یک ابزار ارتباطی نیست، بلکه دریچه‌ای به یک فرهنگ کامل است. آشپزی فرانسوی یاد بگیرید، تاریخ فرانسه را مطالعه کنید، اخبار فرانسه را دنبال کنید. وقتی عاشق فرهنگ یک کشور شوید، یادگیری زبانش دیگر یک «تکلیف» نیست، بلکه یک «لذت» است.</p>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۶ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۶</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="به خودتان استراحت بدهید" data-en="Give Yourself a Break" data-fr="Accordez-vous une Pause">به خودتان استراحت بدهید</h4>
+                                <p class="text-secondary" data-fa="احساس گناه نکنید اگر چند روزی تمرین نکردید! مغز برای تثبیت اطلاعات جدید به استراحت نیاز دارد. یک استراحت ۲-۳ روزه می‌تواند به بازیابی انگیزه کمک کند. اما مراقب باشید این استراحت به ترک کامل تبدیل نشود!" data-en="Don't feel guilty if you skip practice for a few days! The brain needs rest to consolidate new information. A 2-3 day break can help recover motivation. But be careful this break doesn't become a complete abandonment!" data-fr="Ne vous sentez pas coupable si vous ne pratiquez pas pendant quelques jours ! Le cerveau a besoin de repos pour consolider les nouvelles informations. Une pause de 2-3 jours peut aider à retrouver la motivation. Mais attention à ce que cette pause ne devienne pas un abandon complet !">احساس گناه نکنید اگر چند روزی تمرین نکردید! مغز برای تثبیت اطلاعات جدید به استراحت نیاز دارد. یک استراحت ۲-۳ روزه می‌تواند به بازیابی انگیزه کمک کند. اما مراقب باشید این استراحت به ترک کامل تبدیل نشود!</p>
+                            </div>
+                        </div>
+
+                        <!-- راهکار ۷ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۷</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="یک همسفر پیدا کنید" data-en="Find a Learning Partner" data-fr="Trouvez un Partenaire d'Apprentissage">یک همسفر پیدا کنید</h4>
+                                <p class="text-secondary" data-fa="یادگیری زبان به تنهایی می‌تواند خسته‌کننده و دلسردکننده باشد. یک دوست، همکلاسی یا پارتنر زبانی پیدا کنید. می‌توانید با هم تمرین کنید، رقابت دوستانه داشته باشید، و در روزهای سخت همدیگر را تشویق کنید. در کلاس‌های گروهی Teaching Gateway Nazari می‌توانید همسفر مناسب خود را پیدا کنید." data-en="Learning a language alone can be boring and discouraging. Find a friend, classmate, or language partner. You can practice together, have friendly competition, and encourage each other on difficult days. In Teaching Gateway Nazari's group classes, you can find the right learning partner." data-fr="Apprendre une langue seul peut être ennuyeux et décourageant. Trouvez un ami, un camarade de classe ou un partenaire linguistique. Vous pouvez pratiquer ensemble, avoir une compétition amicale et vous encourager mutuellement les jours difficiles. Dans les cours collectifs de Teaching Gateway Nazari, vous pouvez trouver le bon partenaire d'apprentissage.">یادگیری زبان به تنهایی می‌تواند خسته‌کننده و دلسردکننده باشد. یک دوست، همکلاسی یا پارتنر زبانی پیدا کنید. می‌توانید با هم تمرین کنید، رقابت دوستانه داشته باشید، و در روزهای سخت همدیگر را تشویق کنید. در کلاس‌های گروهی Teaching Gateway Nazari می‌توانید همسفر مناسب خود را پیدا کنید.</p>
+                            </div>
+                        </div>
+
+                        <div class="blog-tip-box mt-5">
+                            <h6 class="fw-bold" data-fa="💡 پیام نهایی:" data-en="💡 Final Message:" data-fr="💡 Message Final :">💡 پیام نهایی:</h6>
+                            <p class="text-secondary mb-0" data-fa="به یاد داشته باشید: افت انگیزه بخشی طبیعی از فرآیند یادگیری است. حتی پیشرفته‌ترین زبان‌آموزان هم روزهای سخت دارند. مهم این است که تسلیم نشوید و به مسیر ادامه دهید. همانطور که فرانسوی‌ها می‌گویند: «Petit à petit, l'oiseau fait son nid» (کم‌کم، پرنده لانه‌اش را می‌سازد). شما هم قدم‌به‌قدم به هدفتان نزدیک می‌شوید!" data-en="Remember: motivation drops are a natural part of the learning process. Even advanced learners have difficult days. The important thing is not to give up and keep going. As the French say: 'Petit à petit, l'oiseau fait son nid' (Little by little, the bird builds its nest). You too are getting closer to your goal step by step!" data-fr="Rappelez-vous : les baisses de motivation font naturellement partie du processus d'apprentissage. Même les apprenants avancés ont des jours difficiles. L'important est de ne pas abandonner et de continuer. Comme disent les Français : « Petit à petit, l'oiseau fait son nid ». Vous aussi, vous vous rapprochez de votre objectif pas à pas !">به یاد داشته باشید: افت انگیزه بخشی طبیعی از فرآیند یادگیری است. حتی پیشرفته‌ترین زبان‌آموزان هم روزهای سخت دارند. مهم این است که تسلیم نشوید و به مسیر ادامه دهید. همانطور که فرانسوی‌ها می‌گویند: «Petit à petit, l'oiseau fait son nid» (کم‌کم، پرنده لانه‌اش را می‌سازد). شما هم قدم‌به‌قدم به هدفتان نزدیک می‌شوید!</p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#انگیزه</a>
+                        <a href="#" class="tag-link">#یادگیری_زبان</a>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#موفقیت</a>
+                        <a href="#" class="tag-link">#روتین</a>
+                        <a href="#" class="tag-link">#هدف</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">👩‍🏫</div>
+                            <div>
+                                <h6 class="fw-bold" data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</h6>
+                                <p class="text-secondary small" data-fa="مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص روانشناسی یادگیری زبان و کوچینگ آموزشی. نویسنده کتاب «یادگیری هوشمندانه زبان فرانسه»." data-en="Senior French instructor with 10 years of teaching experience. Specialist in language learning psychology and educational coaching. Author of 'Smart French Learning'." data-fr="Instructeur principal de français avec 10 ans d'expérience. Spécialiste en psychologie de l'apprentissage des langues et coaching éducatif. Auteur de « L'Apprentissage Intelligent du Français ».">مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص روانشناسی یادگیری زبان و کوچینگ آموزشی. نویسنده کتاب «یادگیری هوشمندانه زبان فرانسه».</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/French pronunciation.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill" data-fa="تلفظ" data-en="Pronunciation" data-fr="Prononciation">تلفظ</span>
+                            <h1 class="fw-bold mb-3" data-fa="۵ اشتباه رایج در تلفظ فرانسوی که باید ترک کنید" data-en="5 Common French Pronunciation Mistakes to Avoid" data-fr="5 Erreurs Courantes de Prononciation Française à Éviter">۵ اشتباه رایج در تلفظ فرانسوی که باید ترک کنید</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>👩‍💼 <span data-fa="دکتر مریم رضایی" data-en="Dr. Maryam Rezaei" data-fr="Dr. Maryam Rezaei">دکتر مریم رضایی</span></span>
+                                <span>📅 ۲ تیر ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۱۰ دقیقه مطالعه" data-en="10 min read" data-fr="10 min de lecture">۱۰ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="تلفظ فرانسوی می‌تواند برای زبان‌آموزان چالش‌برانگیز باشد. صداهای nasal، حروف صامت بی‌صدا، و قوانین پیچیده liaison همگی می‌توانند گیج‌کننده باشند. حتی زبان‌آموزان سطح متوسط هم این ۵ اشتباه رایج را مرتکب می‌شوند. در این مقاله، این اشتباهات را شناسایی و راه‌های اصلاح آنها را به شما آموزش می‌دهیم." data-en="French pronunciation can be challenging for learners. Nasal sounds, silent consonants, and complex liaison rules can all be confusing. Even intermediate learners make these 5 common mistakes. In this article, we identify these mistakes and teach you how to correct them." data-fr="La prononciation française peut être difficile pour les apprenants. Les sons nasaux, les consonnes muettes et les règles complexes de liaison peuvent tous être déroutants. Même les apprenants de niveau intermédiaire commettent ces 5 erreurs courantes. Dans cet article, nous identifions ces erreurs et vous apprenons à les corriger.">تلفظ فرانسوی می‌تواند برای زبان‌آموزان چالش‌برانگیز باشد. صداهای nasal، حروف صامت بی‌صدا، و قوانین پیچیده liaison همگی می‌توانند گیج‌کننده باشند. حتی زبان‌آموزان سطح متوسط هم این ۵ اشتباه رایج را مرتکب می‌شوند. در این مقاله، این اشتباهات را شناسایی و راه‌های اصلاح آنها را به شما آموزش می‌دهیم.</p>
+
+                        <!-- اشتباه ۱ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number" style="background: linear-gradient(135deg, #e74c3c, #c0392b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">۰۱</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تلفظ حرف R فرانسوی مثل R انگلیسی" data-en="Pronouncing French R Like English R" data-fr="Prononcer le R Français Comme le R Anglais">تلفظ حرف R فرانسوی مثل R انگلیسی</h4>
+                                <p class="text-secondary" data-fa="یکی از رایج‌ترین اشتباهات، تلفظ R فرانسوی به سبک انگلیسی یا فارسی است. R فرانسوی از انتهای گلو تلفظ می‌شود و باید صدایی شبیه به «غ» ملایم ایجاد کند." data-en="One of the most common mistakes is pronouncing the French R in the English or Persian style. The French R is pronounced from the back of the throat and should create a soft 'gh' sound." data-fr="L'une des erreurs les plus courantes est de prononcer le R français à la manière anglaise ou persane. Le R français se prononce du fond de la gorge et doit créer un son doux semblable au 'gh'.">یکی از رایج‌ترین اشتباهات، تلفظ R فرانسوی به سبک انگلیسی یا فارسی است. R فرانسوی از انتهای گلو تلفظ می‌شود و باید صدایی شبیه به «غ» ملایم ایجاد کند.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="🔊 تمرین:" data-en="🔊 Practice:" data-fr="🔊 Pratique :">🔊 تمرین:</h6>
+                                    <p class="mb-1"><strong data-fa="کلمات برای تمرین:" data-en="Words to practice:" data-fr="Mots à pratiquer :">کلمات برای تمرین:</strong></p>
+                                    <ul>
+                                        <li><strong>Paris</strong> → <small class="text-secondary">پَغی (نه پَریس)</small></li>
+                                        <li><strong>Rouge</strong> → <small class="text-secondary">غوژ (نه روژ)</small></li>
+                                        <li><strong>Trois</strong> → <small class="text-secondary">تغوا (نه تروا)</small></li>
+                                    </ul>
+                                    <p class="text-secondary small mt-2" data-fa="💡 ترفند: دهان را مثل غرغره کردن آب نگه دارید و سعی کنید صدای «غ» را از ته گلو تولید کنید." data-en="💡 Trick: Hold your mouth as if gargling water and try to produce the 'gh' sound from the back of your throat." data-fr="💡 Astuce : Gardez la bouche comme si vous vous gargarisiez et essayez de produire le son 'gh' du fond de la gorge.">💡 ترفند: دهان را مثل غرغره کردن آب نگه دارید و سعی کنید صدای «غ» را از ته گلو تولید کنید.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- اشتباه ۲ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number" style="background: linear-gradient(135deg, #e67e22, #d35400); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">۰۲</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تلفظ حروف بی‌صدای انتهای کلمات" data-en="Pronouncing Silent Final Consonants" data-fr="Prononcer les Consonnes Finales Muettes">تلفظ حروف بی‌صدای انتهای کلمات</h4>
+                                <p class="text-secondary" data-fa="در زبان فرانسه، بسیاری از حروف صامت در انتهای کلمات تلفظ نمی‌شوند. حروف S، T، D، P، X و Z معمولاً در انتهای کلمات بی‌صدا هستند، مگر اینکه با کلمه بعدی liaison داشته باشند." data-en="In French, many consonants at the end of words are not pronounced. The letters S, T, D, P, X, and Z are usually silent at the end of words, unless they have a liaison with the next word." data-fr="En français, de nombreuses consonnes à la fin des mots ne sont pas prononcées. Les lettres S, T, D, P, X et Z sont généralement muettes à la fin des mots, sauf si elles ont une liaison avec le mot suivant.">در زبان فرانسه، بسیاری از حروف صامت در انتهای کلمات تلفظ نمی‌شوند. حروف S، T، D، P، X و Z معمولاً در انتهای کلمات بی‌صدا هستند، مگر اینکه با کلمه بعدی liaison داشته باشند.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="✖️ اشتباه → ✅ صحیح:" data-en="✖️ Wrong → ✅ Correct:" data-fr="✖️ Faux → ✅ Correct :">✖️ اشتباه → ✅ صحیح:</h6>
+                                    <ul>
+                                        <li><strong>Paris</strong> → <small class="text-secondary">پَغی (S تلفظ نشود)</small></li>
+                                        <li><strong>Chat</strong> → <small class="text-secondary">شا (T تلفظ نشود)</small></li>
+                                        <li><strong>Grand</strong> → <small class="text-secondary">گغان (D تلفظ نشود)</small></li>
+                                        <li><strong>Beaucoup</strong> → <small class="text-secondary">بوکو (P تلفظ نشود)</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- اشتباه ۳ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number" style="background: linear-gradient(135deg, #f39c12, #e67e22); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">۰۳</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="اشتباه در تلفظ صداهای Nasal (تو دماغی)" data-en="Mispronouncing Nasal Sounds" data-fr="Mal Prononcer les Sons Nasaux">اشتباه در تلفظ صداهای Nasal (تو دماغی)</h4>
+                                <p class="text-secondary" data-fa="صداهای nasal فرانسوی (an, en, in, on, un) از بینی خارج می‌شوند و معادل دقیقی در فارسی ندارند. بسیاری از زبان‌آموزان این صداها را با n یا m تمام می‌کنند که اشتباه است." data-en="French nasal sounds (an, en, in, on, un) come out through the nose and have no exact equivalent in Persian. Many learners end these sounds with n or m, which is wrong." data-fr="Les sons nasaux français (an, en, in, on, un) sortent par le nez et n'ont pas d'équivalent exact en persan. De nombreux apprenants terminent ces sons par n ou m, ce qui est faux.">صداهای nasal فرانسوی (an, en, in, on, un) از بینی خارج می‌شوند و معادل دقیقی در فارسی ندارند. بسیاری از زبان‌آموزان این صداها را با n یا m تمام می‌کنند که اشتباه است.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="🔊 تمرین:" data-en="🔊 Practice:" data-fr="🔊 Pratique :">🔊 تمرین:</h6>
+                                    <p class="mb-1" data-fa="سعی کنید انگشت خود را روی بینی بگذارید و کلمات زیر را تلفظ کنید. باید لرزش را در بینی احساس کنید:" data-en="Try placing your finger on your nose and pronouncing the words below. You should feel the vibration in your nose:" data-fr="Essayez de placer votre doigt sur votre nez et de prononcer les mots ci-dessous. Vous devriez sentir la vibration dans votre nez :">سعی کنید انگشت خود را روی بینی بگذارید و کلمات زیر را تلفظ کنید. باید لرزش را در بینی احساس کنید:</p>
+                                    <ul>
+                                        <li><strong>Pain</strong> (نان) → <small class="text-secondary">پَن (با لرزش بینی)</small></li>
+                                        <li><strong>Bon</strong> (خوب) → <small class="text-secondary">بُن (با لرزش بینی)</small></li>
+                                        <li><strong>Un</strong> (یک) → <small class="text-secondary">اَن (با لرزش بینی)</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- اشتباه ۴ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number" style="background: linear-gradient(135deg, #27ae60, #229954); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">۰۴</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="فراموش کردن Liaison (اتصال کلمات)" data-en="Forgetting Liaison (Word Linking)" data-fr="Oublier la Liaison">فراموش کردن Liaison (اتصال کلمات)</h4>
+                                <p class="text-secondary" data-fa="Liaison یکی از ویژگی‌های منحصربه‌فرد فرانسه است که در آن حرف بی‌صدای انتهای یک کلمه، وقتی کلمه بعدی با حرف صدادار شروع می‌شود، تلفظ می‌شود." data-en="Liaison is one of the unique features of French where the silent final consonant of a word is pronounced when the next word begins with a vowel." data-fr="La liaison est l'une des caractéristiques uniques du français où la consonne finale muette d'un mot est prononcée lorsque le mot suivant commence par une voyelle.">Liaison یکی از ویژگی‌های منحصربه‌فرد فرانسه است که در آن حرف بی‌صدای انتهای یک کلمه، وقتی کلمه بعدی با حرف صدادار شروع می‌شود، تلفظ می‌شود.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="✖️ بدون Liaison → ✅ با Liaison:" data-en="✖️ Without Liaison → ✅ With Liaison:" data-fr="✖️ Sans Liaison → ✅ Avec Liaison :">✖️ بدون Liaison → ✅ با Liaison:</h6>
+                                    <ul>
+                                        <li><strong>Les amis</strong> → <small class="text-secondary">لِزَمی (S تلفظ می‌شود: lez‿ami)</small></li>
+                                        <li><strong>Vous avez</strong> → <small class="text-secondary">ووزَوِه (S تلفظ می‌شود: vouz‿avez)</small></li>
+                                        <li><strong>Petit enfant</strong> → <small class="text-secondary">پِتیتَنفان (T تلفظ می‌شود: petit‿enfant)</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- اشتباه ۵ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number" style="background: linear-gradient(135deg, #3498db, #2980b9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">۰۵</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تلفظ یکسان U و OU" data-en="Pronouncing U and OU the Same" data-fr="Prononcer U et OU de la Même Façon">تلفظ یکسان U و OU</h4>
+                                <p class="text-secondary" data-fa="بسیاری از زبان‌آموزان فارسی‌زبان، تفاوت بین صدای U (مثل «ü» آلمانی) و OU (مثل «او» فارسی) را تشخیص نمی‌دهند. این تفاوت می‌تواند معنی کلمات را کاملاً عوض کند." data-en="Many Persian-speaking learners don't distinguish between the U sound (like German 'ü') and OU (like Persian 'oo'). This difference can completely change the meaning of words." data-fr="De nombreux apprenants persanophones ne distinguent pas le son U (comme le 'ü' allemand) de OU (comme le 'ou' persan). Cette différence peut complètement changer le sens des mots.">بسیاری از زبان‌آموزان فارسی‌زبان، تفاوت بین صدای U (مثل «ü» آلمانی) و OU (مثل «او» فارسی) را تشخیص نمی‌دهند. این تفاوت می‌تواند معنی کلمات را کاملاً عوض کند.</p>
+                                
+                                <div class="blog-example-box mt-3">
+                                    <h6 class="fw-bold" data-fa="🔊 جفت‌های خطرناک:" data-en="🔊 Dangerous Pairs:" data-fr="🔊 Paires Dangereuses :">🔊 جفت‌های خطرناک:</h6>
+                                    <ul>
+                                        <li><strong>Dessous</strong> (زیر) ↔ <strong>Dessus</strong> (رو) <small class="text-secondary">دِسو ↔ دِسو (با لب‌های گرد)</small></li>
+                                        <li><strong>Rue</strong> (خیابان) ↔ <strong>Roue</strong> (چرخ) <small class="text-secondary">غو ↔ غو (با لب‌های گردتر)</small></li>
+                                        <li><strong>Tu</strong> (تو) ↔ <strong>Tout</strong> (همه) <small class="text-secondary">تو (لب‌ها جمع) ↔ تو (لب‌ها بازتر)</small></li>
+                                    </ul>
+                                    <p class="text-secondary small mt-2" data-fa="💡 ترفند: برای صدای U، لب‌ها را مثل گفتن «او» گرد کنید اما سعی کنید «ای» بگویید. تمرین با آینه کمک می‌کند!" data-en="💡 Trick: For the U sound, round your lips as if saying 'oo' but try to say 'ee'. Practicing with a mirror helps!" data-fr="💡 Astuce : Pour le son U, arrondissez les lèvres comme pour dire 'ou' mais essayez de dire 'i'. S'entraîner avec un miroir aide !">💡 ترفند: برای صدای U، لب‌ها را مثل گفتن «او» گرد کنید اما سعی کنید «ای» بگویید. تمرین با آینه کمک می‌کند!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-tip-box mt-5">
+                            <h6 class="fw-bold" data-fa="💡 جمع‌بندی و توصیه نهایی:" data-en="💡 Summary & Final Recommendation:" data-fr="💡 Résumé et Recommandation Finale :">💡 جمع‌بندی و توصیه نهایی:</h6>
+                            <p class="text-secondary mb-0" data-fa="تلفظ فرانسوی نیاز به تمرین مداوم دارد. پیشنهاد می‌کنیم روزانه ۱۵ دقیقه به تمرین تلفظ با فایل‌های صوتی اختصاص دهید. صدای خود را ضبط کنید و با صدای Nativeها مقایسه کنید. همچنین شرکت در کلاس‌های مکالمه با اساتید Native می‌تواند سرعت پیشرفت شما را چند برابر کند. به یاد داشته باشید: حتی داشتن لهجه هم ایرادی ندارد، مهم این است که واضح و قابل فهم صحبت کنید!" data-en="French pronunciation requires constant practice. We recommend dedicating 15 minutes daily to pronunciation practice with audio files. Record your voice and compare it with native speakers. Also, participating in conversation classes with native teachers can multiply your progress speed. Remember: having an accent is fine, the important thing is to speak clearly and comprehensibly!" data-fr="La prononciation française nécessite une pratique constante. Nous vous recommandons de consacrer 15 minutes par jour à la pratique de la prononciation avec des fichiers audio. Enregistrez votre voix et comparez-la avec celle des natifs. De plus, participer à des cours de conversation avec des professeurs natifs peut multiplier votre vitesse de progression. Rappelez-vous : avoir un accent n'est pas grave, l'important est de parler clairement et de manière compréhensible !">تلفظ فرانسوی نیاز به تمرین مداوم دارد. پیشنهاد می‌کنیم روزانه ۱۵ دقیقه به تمرین تلفظ با فایل‌های صوتی اختصاص دهید. صدای خود را ضبط کنید و با صدای Nativeها مقایسه کنید. همچنین شرکت در کلاس‌های مکالمه با اساتید Native می‌تواند سرعت پیشرفت شما را چند برابر کند. به یاد داشته باشید: حتی داشتن لهجه هم ایرادی ندارد، مهم این است که واضح و قابل فهم صحبت کنید!</p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#تلفظ</a>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#اشتباهات_رایج</a>
+                        <a href="#" class="tag-link">#Nasal</a>
+                        <a href="#" class="tag-link">#Liaison</a>
+                        <a href="#" class="tag-link">#تمرین</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">👩‍💼</div>
+                            <div>
+                                <h6 class="fw-bold" data-fa="دکتر مریم رضایی" data-en="Dr. Maryam Rezaei" data-fr="Dr. Maryam Rezaei">دکتر مریم رضایی</h6>
+                                <p class="text-secondary small" data-fa="متخصص آواشناسی فرانسه و مدرس تلفظ. فارغ‌التحصیل دانشگاه برلین با ۷ سال تجربه در آموزش تلفظ صحیح فرانسه به فارسی‌زبانان." data-en="French phonetics specialist and pronunciation instructor. Berlin University graduate with 7 years of experience teaching correct French pronunciation to Persian speakers." data-fr="Spécialiste en phonétique française et professeur de prononciation. Diplômée de l'Université de Berlin avec 7 ans d'expérience dans l'enseignement de la prononciation correcte du français aux persanophones.">متخصص آواشناسی فرانسه و مدرس تلفظ. فارغ‌التحصیل دانشگاه برلین با ۷ سال تجربه در آموزش تلفظ صحیح فرانسه به فارسی‌زبانان.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

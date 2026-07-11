@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/French podcasts.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-info mb-3 px-3 py-2 rounded-pill" data-fa="منابع آموزشی" data-en="Resources" data-fr="Ressources">منابع آموزشی</span>
+                            <h1 class="fw-bold mb-3" data-fa="بهترین پادکست‌های فرانسوی برای تقویت Listening" data-en="Best French Podcasts to Improve Listening" data-fr="Meilleurs Podcasts Français pour Améliorer l'Écoute">بهترین پادکست‌های فرانسوی برای تقویت Listening</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>👨‍🏫 <span data-fa="جان اسمیت" data-en="John Smith" data-fr="John Smith">جان اسمیت</span></span>
+                                <span>📅 ۲۸ خرداد ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۹ دقیقه مطالعه" data-en="9 min read" data-fr="9 min de lecture">۹ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="پادکست‌ها یکی از بهترین ابزارها برای تقویت مهارت شنیداری (listening) در زبان فرانسه هستند. می‌توانید در هر زمان و مکانی - هنگام رانندگی، ورزش، آشپزی یا قبل از خواب - به آنها گوش دهید. در این مقاله، بهترین پادکست‌های فرانسوی را بر اساس سطح زبان‌آموزی معرفی می‌کنیم." data-en="Podcasts are one of the best tools for improving French listening skills. You can listen to them anytime, anywhere - while driving, exercising, cooking, or before bed. In this article, we introduce the best French podcasts based on learning level." data-fr="Les podcasts sont l'un des meilleurs outils pour améliorer la compréhension orale en français. Vous pouvez les écouter à tout moment, n'importe où - en conduisant, en faisant du sport, en cuisinant ou avant de dormir. Dans cet article, nous présentons les meilleurs podcasts français selon le niveau d'apprentissage.">پادکست‌ها یکی از بهترین ابزارها برای تقویت مهارت شنیداری (listening) در زبان فرانسه هستند. می‌توانید در هر زمان و مکانی - هنگام رانندگی، ورزش، آشپزی یا قبل از خواب - به آنها گوش دهید. در این مقاله، بهترین پادکست‌های فرانسوی را بر اساس سطح زبان‌آموزی معرفی می‌کنیم.</p>
+
+                        <h3 class="fw-bold mt-5 mb-4" data-fa="🎧 مبتدی (A1 - A2)" data-en="🎧 Beginner (A1 - A2)" data-fr="🎧 Débutant (A1 - A2)">🎧 مبتدی (A1 - A2)</h3>
+
+                        <!-- پادکست ۱ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">Coffee Break French</h5>
+                                <p class="text-secondary small" data-fa="یکی از محبوب‌ترین پادکست‌های آموزش فرانسه در جهان. هر اپیزود ۱۵-۲۰ دقیقه‌ای یک موضوع مشخص را پوشش می‌دهد. مدرس با لهجه واضح و سرعت کم صحبت می‌کند و توضیحات به انگلیسی ارائه می‌شود." data-en="One of the most popular French learning podcasts in the world. Each 15-20 minute episode covers a specific topic. The teacher speaks with a clear accent at a slow pace, with explanations in English." data-fr="L'un des podcasts d'apprentissage du français les plus populaires au monde. Chaque épisode de 15 à 20 minutes couvre un sujet spécifique. L'enseignant parle avec un accent clair à un rythme lent, avec des explications en anglais.">یکی از محبوب‌ترین پادکست‌های آموزش فرانسه در جهان. هر اپیزود ۱۵-۲۰ دقیقه‌ای یک موضوع مشخص را پوشش می‌دهد. مدرس با لهجه واضح و سرعت کم صحبت می‌کند و توضیحات به انگلیسی ارائه می‌شود.</p>
+                                <span class="podcast-meta">⏱️ 15 - 20| 🎯 A1-A2 | 🌐 coffee-break.com</span>
+                            </div>
+                        </div>
+
+                        <!-- پادکست ۲ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">French Pod 101</h5>
+                                <p class="text-secondary small" data-fa="پادکستی جامع با هزاران اپیزود برای تمام سطوح. بخش مبتدی شامل دیالوگ‌های ساده، لغات ضروری و نکات فرهنگی است. سرعت گفتار آرام و همراه با تکرار است." data-en="A comprehensive podcast with thousands of episodes for all levels. The beginner section includes simple dialogues, essential vocabulary, and cultural tips. Speech is slow with repetition." data-fr="Un podcast complet avec des milliers d'épisodes pour tous les niveaux. La section débutant comprend des dialogues simples, du vocabulaire essentiel et des conseils culturels. Le débit est lent avec répétition.">پادکستی جامع با هزاران اپیزود برای تمام سطوح. بخش مبتدی شامل دیالوگ‌های ساده، لغات ضروری و نکات فرهنگی است. سرعت گفتار آرام و همراه با تکرار است.</p>
+                                <span class="podcast-meta">⏱️ 10 - 15  | 🎯 A1-A2 | 🌐 frenchpod101.com</span>
+                            </div>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-4" data-fa="🎧 متوسط (B1 - B2)" data-en="🎧 Intermediate (B1 - B2)" data-fr="🎧 Intermédiaire (B1 - B2)">🎧 متوسط (B1 - B2)</h3>
+
+                        <!-- پادکست ۳ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">InnerFrench</h5>
+                                <p class="text-secondary small" data-fa="پادکست فوق‌العاده‌ای برای زبان‌آموزان سطح متوسط. Hugo، مدرس این پادکست، درباره موضوعات جذاب مثل روانشناسی، فلسفه، فرهنگ و جامعه فرانسه صحبت می‌کند. سرعت گفتار طبیعی اما قابل فهم است." data-en="An amazing podcast for intermediate learners. Hugo, the host, talks about fascinating topics like psychology, philosophy, French culture, and society. Speech is natural but comprehensible." data-fr="Un podcast formidable pour les apprenants de niveau intermédiaire. Hugo, l'animateur, parle de sujets fascinants comme la psychologie, la philosophie, la culture et la société française. Le débit est naturel mais compréhensible.">پادکست فوق‌العاده‌ای برای زبان‌آموزان سطح متوسط. Hugo، مدرس این پادکست، درباره موضوعات جذاب مثل روانشناسی، فلسفه، فرهنگ و جامعه فرانسه صحبت می‌کند. سرعت گفتار طبیعی اما قابل فهم است.</p>
+                                <span class="podcast-meta">⏱️ 30 - 40| 🎯 B1-B2 | 🌐 innerfrench.com</span>
+                            </div>
+                        </div>
+
+                        <!-- پادکست ۴ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">Français Authentique</h5>
+                                <p class="text-secondary small" data-fa="Johan، مدرس فرانسوی، با روش «یادگیری طبیعی» زبان فرانسه را آموزش می‌دهد. موضوعات متنوع از انگیزه و موفقیت تا نکات یادگیری زبان. فایل‌های PDF هم برای هر اپیزود ارائه می‌شود." data-en="Johan, a French teacher, teaches French with the 'natural learning' method. Diverse topics from motivation and success to language learning tips. PDF files are also provided for each episode." data-fr="Johan, un enseignant français, enseigne le français avec la méthode d'« apprentissage naturel ». Sujets variés de la motivation et du succès aux conseils d'apprentissage des langues. Des fichiers PDF sont également fournis pour chaque épisode.">Johan، مدرس فرانسوی، با روش «یادگیری طبیعی» زبان فرانسه را آموزش می‌دهد. موضوعات متنوع از انگیزه و موفقیت تا نکات یادگیری زبان. فایل‌های PDF هم برای هر اپیزود ارائه می‌شود.</p>
+                                <span class="podcast-meta">⏱️ 20 - 25| 🎯 B1-B2 | 🌐 francaisauthentique.com</span>
+                            </div>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-4" data-fa="🎧 پیشرفته (C1 - C2)" data-en="🎧 Advanced (C1 - C2)" data-fr="🎧 Avancé (C1 - C2)">🎧 پیشرفته (C1 - C2)</h3>
+
+                        <!-- پادکست ۵ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">Transfert</h5>
+                                <p class="text-secondary small" data-fa="یکی از پادکست‌های پربیننده فرانسه! داستان‌های واقعی و احساسی که توسط خود راویان تعریف می‌شود. سرعت گفتار کاملاً طبیعی و native است. عالی برای درک French Authentic." data-en="One of the most popular podcasts in France! Real, emotional stories told by the narrators themselves. Speech is completely natural and native. Excellent for understanding authentic French." data-fr="L'un des podcasts les plus populaires de France ! Des histoires réelles et émouvantes racontées par les narrateurs eux-mêmes. Le débit est complètement naturel et natif. Excellent pour comprendre le français authentique.">یکی از پادکست‌های پربیننده فرانسه! داستان‌های واقعی و احساسی که توسط خود راویان تعریف می‌شود. سرعت گفتار کاملاً طبیعی و native است. عالی برای درک French Authentic.</p>
+                                <span class="podcast-meta">⏱️ 40 - 60| 🎯 C1-C2 | 🌐 slate.fr/transfert</span>
+                            </div>
+                        </div>
+
+                        <!-- پادکست ۶ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">🎙️</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">Hondelatte Raconte</h5>
+                                <p class="text-secondary small" data-fa="Christophe Hondelatte، روزنامه‌نگار مشهور فرانسوی، داستان‌های جنایی، تاریخی و معمایی را با صدای جذابش روایت می‌کند. لحن حماسی و دایره لغات غنی." data-en="Christophe Hondelatte, a famous French journalist, narrates crime, historical, and mystery stories with his captivating voice. Epic tone and rich vocabulary." data-fr="Christophe Hondelatte, célèbre journaliste français, raconte des histoires criminelles, historiques et mystérieuses avec sa voix captivante. Ton épique et vocabulaire riche.">Christophe Hondelatte، روزنامه‌نگار مشهور فرانسوی، داستان‌های جنایی، تاریخی و معمایی را با صدای جذابش روایت می‌کند. لحن حماسی و دایره لغات غنی.</p>
+                                <span class="podcast-meta">⏱️ 30 - 45| 🎯 C1-C2 | 🌐 europe1.fr</span>
+                            </div>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-4" data-fa="🎧 پادکست‌های خبری و فرهنگی" data-en="🎧 News & Cultural Podcasts" data-fr="🎧 Podcasts d'Actualité et Culturels">🎧 پادکست‌های خبری و فرهنگی</h3>
+
+                        <!-- پادکست ۷ -->
+                        <div class="podcast-card">
+                            <div class="podcast-icon">📰</div>
+                            <div class="podcast-info">
+                                <h5 class="fw-bold">Journal en français facile</h5>
+                                <p class="text-secondary small" data-fa="خبرهای روز France 24 که هر شب با زبانی ساده‌تر و سرعت کمتر ارائه می‌شود. همراه با ترانسکریپت کامل. عالی برای سطح B1 به بالا." data-en="Daily news from France 24 presented in simpler language at a slower pace each night. With full transcript. Great for B1 and above." data-fr="Les actualités quotidiennes de France 24 présentées dans un langage plus simple à un rythme plus lent chaque soir. Avec transcription complète. Idéal pour B1 et plus.">خبرهای روز France 24 که هر شب با زبانی ساده‌تر و سرعت کمتر ارائه می‌شود. همراه با ترانسکریپت کامل. عالی برای سطح B1 به بالا.</p>
+                                <span class="podcast-meta">⏱️ 10 | 🎯 B1+ | 🌐 france24.com</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-tip-box mt-5">
+                            <h6 class="fw-bold" data-fa="💡 تکنیک طلایی برای استفاده از پادکست:" data-en="💡 Golden Technique for Using Podcasts:" data-fr="💡 Technique en Or pour Utiliser les Podcasts :">💡 تکنیک طلایی برای استفاده از پادکست:</h6>
+                            <p class="text-secondary mb-2" data-fa="برای حداکثر بهره‌وری از پادکست، این روش ۳ مرحله‌ای را امتحان کنید:" data-en="For maximum podcast efficiency, try this 3-step method:" data-fr="Pour une efficacité maximale des podcasts, essayez cette méthode en 3 étapes :">برای حداکثر بهره‌وری از پادکست، این روش ۳ مرحله‌ای را امتحان کنید:</p>
+                            <ol class="text-secondary">
+                                <li data-fa="گوش دادن اول: بدون توقف، فقط مفهوم کلی را درک کنید" data-en="First listen: No pauses, just grasp the general idea" data-fr="Première écoute : Sans pause, saisissez simplement l'idée générale">گوش دادن اول: بدون توقف، فقط مفهوم کلی را درک کنید</li>
+                                <li data-fa="گوش دادن دوم: با ترانسکریپت، کلمات جدید را یادداشت کنید" data-en="Second listen: With transcript, note down new words" data-fr="Deuxième écoute : Avec la transcription, notez les nouveaux mots">گوش دادن دوم: با ترانسکریپت، کلمات جدید را یادداشت کنید</li>
+                                <li data-fa="گوش دادن سوم: با تکنیک Shadowing همزمان تکرار کنید" data-en="Third listen: Shadow the audio simultaneously" data-fr="Troisième écoute : Faites du shadowing simultanément">گوش دادن سوم: با تکنیک Shadowing همزمان تکرار کنید</li>
+                            </ol>
+                        </div>
+
+                        <div class="blog-tip-box mt-4">
+                            <h6 class="fw-bold" data-fa="📱 اپلیکیشن‌های پیشنهادی برای گوش دادن به پادکست:" data-en="📱 Recommended Apps for Listening to Podcasts:" data-fr="📱 Applications Recommandées pour Écouter des Podcasts :">📱 اپلیکیشن‌های پیشنهادی برای گوش دادن به پادکست:</h6>
+                            <p class="text-secondary mb-0">
+                                <strong>Spotify</strong> | <strong>Apple Podcasts</strong> | <strong>Google Podcasts</strong> | <strong>Pocket Casts</strong> | <strong>Radio France</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#پادکست</a>
+                        <a href="#" class="tag-link">#Listening</a>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#منابع_رایگان</a>
+                        <a href="#" class="tag-link">#مبتدی</a>
+                        <a href="#" class="tag-link">#پیشرفته</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">👨‍🏫</div>
+                            <div>
+                                <h6 class="fw-bold">John Smith</h6>
+                                <p class="text-secondary small" data-fa="مدرس انگلیسی و فرانسه با ۱۲ سال سابقه. متخصص استفاده از تکنولوژی و رسانه‌های دیجیتال در آموزش زبان. گردآورنده بهترین منابع آموزشی فرانسه." data-en="English and French teacher with 12 years of experience. Specialist in using technology and digital media in language teaching. Curator of the best French learning resources." data-fr="Professeur d'anglais et de français avec 12 ans d'expérience. Spécialiste de l'utilisation de la technologie et des médias numériques dans l'enseignement des langues. Conservateur des meilleures ressources d'apprentissage du français.">مدرس انگلیسی و فرانسه با ۱۲ سال سابقه. متخصص استفاده از تکنولوژی و رسانه‌های دیجیتال در آموزش زبان. گردآورنده بهترین منابع آموزشی فرانسه.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

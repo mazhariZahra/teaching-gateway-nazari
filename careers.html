@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر بالای صفحه ===== -->
+    <section class="page-banner d-flex align-items-center" data-aos="fade-down">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3" data-fa="همکاری با ما" data-en="Join Our Team" data-fr="Rejoignez Notre Équipe">همکاری با ما</h1>
+            <p class="lead text-secondary" data-fa="به خانواده Teaching Gateway Nazari بپیوندید" data-en="Join the Teaching Gateway Nazari family" data-fr="Rejoignez la famille Teaching Gateway Nazari">به خانواده Teaching Gateway Nazari بپیوندید</p>
+        </div>
+    </section>
+
+    <!-- ===== چرا همکاری با ما ===== -->
+    <section class="why-join py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold" data-fa="چرا Teaching Gateway Nazari؟" data-en="Why Teaching Gateway Nazari?" data-fr="Pourquoi Teaching Gateway Nazari ?">چرا Teaching Gateway Nazari؟</h2>
+                <p class="text-secondary" data-fa="مزایای همکاری با برترین آموزشگاه زبان فرانسه" data-en="Benefits of working with the top French language academy" data-fr="Avantages de travailler avec la meilleure académie de langue française">مزایای همکاری با برترین آموزشگاه زبان فرانسه</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="join-card text-center">
+                        <div class="join-icon bg-primary-subtle text-primary">
+                            <i class="bi bi-cash-stack fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3" data-fa="درآمد رقابتی" data-en="Competitive Income" data-fr="Revenu Compétitif">درآمد رقابتی</h5>
+                        <p class="text-secondary small" data-fa="پرداخت به موقع و بالاتر از میانگین بازار. پاداش‌های فصلی و افزایش حقوق بر اساس عملکرد." data-en="Timely payment above market average. Seasonal bonuses and performance-based raises." data-fr="Paiement ponctuel supérieur à la moyenne du marché. Primes saisonnières et augmentations basées sur la performance.">پرداخت به موقع و بالاتر از میانگین بازار. پاداش‌های فصلی و افزایش حقوق بر اساس عملکرد.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="join-card text-center">
+                        <div class="join-icon bg-success-subtle text-success">
+                            <i class="bi bi-laptop fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3" data-fa="دورکاری انعطاف‌پذیر" data-en="Flexible Remote Work" data-fr="Télétravail Flexible">دورکاری انعطاف‌پذیر</h5>
+                        <p class="text-secondary small" data-fa="امکان تدریس آنلاین از هر کجای دنیا. برنامه‌ریزی منعطف بر اساس زمان‌های آزاد شما." data-en="Teach online from anywhere in the world. Flexible scheduling based on your availability." data-fr="Enseignez en ligne de n'importe où dans le monde. Planification flexible selon vos disponibilités.">امکان تدریس آنلاین از هر کجای دنیا. برنامه‌ریزی منعطف بر اساس زمان‌های آزاد شما.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="join-card text-center">
+                        <div class="join-icon bg-warning-subtle text-warning">
+                            <i class="bi bi-graph-up-arrow fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3" data-fa="رشد حرفه‌ای" data-en="Professional Growth" data-fr="Croissance Professionnelle">رشد حرفه‌ای</h5>
+                        <p class="text-secondary small" data-fa="دوره‌های آموزشی رایگان برای ارتقای مهارت‌های تدریس. فرصت پیشرفت به سمت‌های مدیریتی." data-en="Free training courses to improve teaching skills. Opportunities for advancement to management positions." data-fr="Cours de formation gratuits pour améliorer les compétences pédagogiques. Opportunités d'avancement vers des postes de direction.">دوره‌های آموزشی رایگان برای ارتقای مهارت‌های تدریس. فرصت پیشرفت به سمت‌های مدیریتی.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== موقعیت‌های شغلی ===== -->
+    <section class="positions-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold" data-fa="موقعیت‌های شغلی باز" data-en="Open Positions" data-fr="Postes Ouverts">موقعیت‌های شغلی باز</h2>
+                <p class="text-secondary" data-fa="به تیم ما بپیوندید و تفاوت ایجاد کنید" data-en="Join our team and make a difference" data-fr="Rejoignez notre équipe et faites la différence">به تیم ما بپیوندید و تفاوت ایجاد کنید</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- موقعیت ۱ -->
+                    <div class="position-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="badge bg-danger" data-fa="فوری" data-en="Urgent" data-fr="Urgent">فوری</span>
+                                    <span class="badge bg-primary-subtle text-primary" data-fa="تمام وقت" data-en="Full-time" data-fr="Temps plein">تمام وقت</span>
+                                    <span class="badge bg-success-subtle text-success" data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span>
+                                </div>
+                                <h5 class="fw-bold" data-fa="مدرس زبان فرانسه (Native)" data-en="Native French Teacher" data-fr="Professeur de Français Natif">مدرس زبان فرانسه (Native)</h5>
+                                <p class="text-secondary small" data-fa="تدریس دوره‌های A1 تا C2 به صورت آنلاین. حداقل ۳ سال سابقه تدریس و مدرک DALF/DELF الزامی است." data-en="Teaching A1 to C2 courses online. Minimum 3 years teaching experience and DALF/DELF certification required." data-fr="Enseignement des cours A1 à C2 en ligne. Minimum 3 ans d'expérience en enseignement et certification DALF/DELF requise.">تدریس دوره‌های A1 تا C2 به صورت آنلاین. حداقل ۳ سال سابقه تدریس و مدرک DALF/DELF الزامی است.</p>
+                                <div class="d-flex gap-3 text-secondary small mt-2">
+                                    <span><i class="bi bi-geo-alt me-1"></i><span data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span></span>
+                                    <span><i class="bi bi-clock me-1"></i><span data-fa="شنبه تا پنجشنبه" data-en="Sat-Thu" data-fr="Sam-Jeu">شنبه تا پنجشنبه</span></span>
+                                </div>
+                            </div>
+                            <a href="#applyForm" class="btn btn-primary rounded-pill px-4 flex-shrink-0" data-fa="درخواست" data-en="Apply" data-fr="Postuler">درخواست</a>
+                        </div>
+                    </div>
+
+                    <!-- موقعیت ۲ -->
+                    <div class="position-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="badge bg-primary-subtle text-primary" data-fa="پاره وقت" data-en="Part-time" data-fr="Temps partiel">پاره وقت</span>
+                                    <span class="badge bg-success-subtle text-success" data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span>
+                                </div>
+                                <h5 class="fw-bold" data-fa="مدرس زبان انگلیسی" data-en="English Teacher" data-fr="Professeur d'Anglais">مدرس زبان انگلیسی</h5>
+                                <p class="text-secondary small" data-fa="تدریس دوره‌های جنرال و آیلتس. مدرک آیلتس ۷.۵+ و حداقل ۲ سال سابقه تدریس." data-en="Teaching General English and IELTS courses. IELTS 7.5+ certification and minimum 2 years teaching experience." data-fr="Enseignement de l'anglais général et de l'IELTS. Certification IELTS 7.5+ et minimum 2 ans d'expérience en enseignement.">تدریس دوره‌های جنرال و آیلتس. مدرک آیلتس ۷.۵+ و حداقل ۲ سال سابقه تدریس.</p>
+                                <div class="d-flex gap-3 text-secondary small mt-2">
+                                    <span><i class="bi bi-geo-alt me-1"></i><span data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span></span>
+                                    <span><i class="bi bi-clock me-1"></i><span data-fa="ساعات منعطف" data-en="Flexible Hours" data-fr="Horaires Flexibles">ساعات منعطف</span></span>
+                                </div>
+                            </div>
+                            <a href="#applyForm" class="btn btn-primary rounded-pill px-4 flex-shrink-0" data-fa="درخواست" data-en="Apply" data-fr="Postuler">درخواست</a>
+                        </div>
+                    </div>
+
+                    <!-- موقعیت ۳ -->
+                    <div class="position-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="badge bg-primary-subtle text-primary" data-fa="تمام وقت" data-en="Full-time" data-fr="Temps plein">تمام وقت</span>
+                                    <span class="badge bg-warning-subtle text-warning" data-fa="حضوری" data-en="On-site" data-fr="Présentiel">حضوری</span>
+                                </div>
+                                <h5 class="fw-bold" data-fa="کارشناس پشتیبانی آموزشی" data-en="Educational Support Specialist" data-fr="Spécialiste du Support Éducatif">کارشناس پشتیبانی آموزشی</h5>
+                                <p class="text-secondary small" data-fa="پاسخگویی به سوالات زبان‌آموزان، مشاوره ثبت‌نام و پیگیری امور آموزشی. تسلط به زبان فرانسه مزیت محسوب می‌شود." data-en="Answering student questions, enrollment consulting, and following up on educational matters. French language skills are a plus." data-fr="Répondre aux questions des étudiants, conseiller sur les inscriptions et suivre les affaires éducatives. La maîtrise du français est un atout.">پاسخگویی به سوالات زبان‌آموزان، مشاوره ثبت‌نام و پیگیری امور آموزشی. تسلط به زبان فرانسه مزیت محسوب می‌شود.</p>
+                                <div class="d-flex gap-3 text-secondary small mt-2">
+                                    <span><i class="bi bi-geo-alt me-1"></i><span data-fa="تهران" data-en="Tehran" data-fr="Téhéran">تهران</span></span>
+                                    <span><i class="bi bi-clock me-1"></i><span data-fa="شنبه تا پنجشنبه" data-en="Sat-Thu" data-fr="Sam-Jeu">شنبه تا پنجشنبه</span></span>
+                                </div>
+                            </div>
+                            <a href="#applyForm" class="btn btn-primary rounded-pill px-4 flex-shrink-0" data-fa="درخواست" data-en="Apply" data-fr="Postuler">درخواست</a>
+                        </div>
+                    </div>
+
+                    <!-- موقعیت ۴ -->
+                    <div class="position-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="badge bg-primary-subtle text-primary" data-fa="پاره وقت" data-en="Part-time" data-fr="Temps partiel">پاره وقت</span>
+                                    <span class="badge bg-success-subtle text-success" data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span>
+                                </div>
+                                <h5 class="fw-bold" data-fa="تولیدکننده محتوای آموزشی" data-en="Educational Content Creator" data-fr="Créateur de Contenu Éducatif">تولیدکننده محتوای آموزشی</h5>
+                                <p class="text-secondary small" data-fa="طراحی و تولید محتوای آموزشی برای دوره‌های فرانسه. شامل ویدیو، پادکست، اینفوگرافیک و جزوه‌های آموزشی." data-en="Design and produce educational content for French courses. Includes videos, podcasts, infographics, and study guides." data-fr="Concevoir et produire du contenu éducatif pour les cours de français. Comprend des vidéos, des podcasts, des infographies et des guides d'étude.">طراحی و تولید محتوای آموزشی برای دوره‌های فرانسه. شامل ویدیو، پادکست، اینفوگرافیک و جزوه‌های آموزشی.</p>
+                                <div class="d-flex gap-3 text-secondary small mt-2">
+                                    <span><i class="bi bi-geo-alt me-1"></i><span data-fa="دورکاری" data-en="Remote" data-fr="Télétravail">دورکاری</span></span>
+                                    <span><i class="bi bi-clock me-1"></i><span data-fa="پروژه‌ای" data-en="Project-based" data-fr="Par projet">پروژه‌ای</span></span>
+                                </div>
+                            </div>
+                            <a href="#applyForm" class="btn btn-primary rounded-pill px-4 flex-shrink-0" data-fa="درخواست" data-en="Apply" data-fr="Postuler">درخواست</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فرم ارسال درخواست ===== -->
+    <section class="apply-section py-5" id="applyForm">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="fw-bold" data-fa="فرم درخواست همکاری" data-en="Application Form" data-fr="Formulaire de Candidature">فرم درخواست همکاری</h2>
+                        <p class="text-secondary" data-fa="فرم زیر را پر کنید تا تیم ما با شما تماس بگیرد" data-en="Fill out the form below and our team will contact you" data-fr="Remplissez le formulaire ci-dessous et notre équipe vous contactera">فرم زیر را پر کنید تا تیم ما با شما تماس بگیرد</p>
+                    </div>
+
+                    <div class="apply-form-card" data-aos="fade-up">
+                        <form id="careerForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="نام و نام خانوادگی" data-en="Full Name" data-fr="Nom Complet">نام و نام خانوادگی</label>
+                                    <input type="text" class="form-control" data-fa-placeholder="مثال: علی محمدی" data-en-placeholder="e.g. Ali Mohammadi" data-fr-placeholder="ex: Ali Mohammadi" placeholder="مثال: علی محمدی" id="careerName">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="ایمیل" data-en="Email" data-fr="E-mail">ایمیل</label>
+                                    <input type="email" class="form-control" data-fa-placeholder="example@email.com" data-en-placeholder="example@email.com" data-fr-placeholder="exemple@email.com" placeholder="example@email.com" id="careerEmail">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="شماره تماس" data-en="Phone Number" data-fr="Numéro de Téléphone">شماره تماس</label>
+                                    <input type="tel" class="form-control" data-fa-placeholder="۰۹۱۲۳۴۵۶۷۸۹" data-en-placeholder="+98 912 345 6789" data-fr-placeholder="+98 912 345 6789" placeholder="۰۹۱۲۳۴۵۶۷۸۹" id="careerPhone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium" data-fa="موقعیت مورد نظر" data-en="Desired Position" data-fr="Poste Souhaité">موقعیت مورد نظر</label>
+                                    <select class="form-control" id="careerPosition">
+                                        <option value="" data-fa="انتخاب کنید..." data-en="Select..." data-fr="Sélectionner...">انتخاب کنید...</option>
+                                        <option value="french-teacher" data-fa="مدرس فرانسه" data-en="French Teacher" data-fr="Professeur de Français">مدرس فرانسه</option>
+                                        <option value="english-teacher" data-fa="مدرس انگلیسی" data-en="English Teacher" data-fr="Professeur d'Anglais">مدرس انگلیسی</option>
+                                        <option value="support" data-fa="کارشناس پشتیبانی" data-en="Support Specialist" data-fr="Spécialiste Support">کارشناس پشتیبانی</option>
+                                        <option value="content" data-fa="تولیدکننده محتوا" data-en="Content Creator" data-fr="Créateur de Contenu">تولیدکننده محتوا</option>
+                                        <option value="other" data-fa="سایر" data-en="Other" data-fr="Autre">سایر</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-medium" data-fa="آپلود رزومه (PDF)" data-en="Upload Resume (PDF)" data-fr="Télécharger CV (PDF)">آپلود رزومه (PDF)</label>
+                                    <div class="file-upload-wrapper">
+                                        <input type="file" class="form-control" accept=".pdf" id="careerResume">
+                                        <small class="text-secondary d-block mt-1" data-fa="فقط فایل PDF با حجم کمتر از ۵ مگابایت" data-en="PDF only, max 5MB" data-fr="PDF uniquement, max 5 Mo">فقط فایل PDF با حجم کمتر از ۵ مگابایت</small>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-medium" data-fa="درباره خودتان بنویسید" data-en="Tell Us About Yourself" data-fr="Parlez-nous de Vous">درباره خودتان بنویسید</label>
+                                    <textarea class="form-control" rows="4" data-fa-placeholder="سوابق کاری، مهارت‌ها و انگیزه شما برای همکاری با ما..." data-en-placeholder="Your experience, skills, and motivation to work with us..." data-fr-placeholder="Votre expérience, compétences et motivation à travailler avec nous..." placeholder="سوابق کاری، مهارت‌ها و انگیزه شما برای همکاری با ما..." id="careerMessage"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="careerAgree">
+                                        <label class="form-check-label text-secondary" for="careerAgree" data-fa="اطلاعات من مطابق با قوانین حریم خصوصی محفوظ می‌ماند." data-en="My information will be kept confidential according to the privacy policy." data-fr="Mes informations resteront confidentielles conformément à la politique de confidentialité.">اطلاعات من مطابق با قوانین حریم خصوصی محفوظ می‌ماند.</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" data-fa="ارسال درخواست" data-en="Submit Application" data-fr="Envoyer la Candidature">
+                                        <span data-fa="ارسال درخواست" data-en="Submit Application" data-fr="Envoyer la Candidature">ارسال درخواست</span>
+                                        <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none" data-fa="اساتید" data-en="Teachers" data-fr="Professeurs">اساتید</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

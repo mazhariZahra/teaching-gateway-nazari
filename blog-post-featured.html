@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/10 fr.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-danger mb-3 px-3 py-2 rounded-pill" data-fa="ویژه" data-en="Featured" data-fr="À la une">ویژه</span>
+                            <h1 class="fw-bold mb-3" data-fa="۱۰ ترفند طلایی برای یادگیری سریع زبان فرانسه" data-en="10 Golden Tricks to Learn French Fast" data-fr="10 Astuces en Or pour Apprendre le Français Rapidement">۱۰ ترفند طلایی برای یادگیری سریع زبان فرانسه</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>👩‍🏫 <span data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</span></span>
+                                <span>📅 ۱۵ تیر ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۱۲ دقیقه مطالعه" data-en="12 min read" data-fr="12 min de lecture">۱۲ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="یادگیری زبان فرانسه می‌تواند چالش‌برانگیز باشد، اما با تکنیک‌های درست می‌توانید سرعت یادگیری خود را چند برابر کنید. در این مقاله، ۱۰ ترفند طلایی که اساتید مجرب ما پیشنهاد می‌دهند را با شما به اشتراک می‌گذاریم." data-en="Learning French can be challenging, but with the right techniques, you can multiply your learning speed. In this article, we share 10 golden tricks suggested by our experienced teachers." data-fr="Apprendre le français peut être un défi, mais avec les bonnes techniques, vous pouvez multiplier votre vitesse d'apprentissage. Dans cet article, nous partageons 10 astuces en or suggérées par nos professeurs expérimentés.">یادگیری زبان فرانسه می‌تواند چالش‌برانگیز باشد، اما با تکنیک‌های درست می‌توانید سرعت یادگیری خود را چند برابر کنید. در این مقاله، ۱۰ ترفند طلایی که اساتید مجرب ما پیشنهاد می‌دهند را با شما به اشتراک می‌گذاریم.</p>
+
+                        <!-- ترفند ۱ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۱</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="غوطه‌ور شدن در زبان (Immersion)" data-en="Language Immersion" data-fr="Immersion Linguistique">غوطه‌ور شدن در زبان (Immersion)</h4>
+                                <p class="text-secondary" data-fa="زبان فرانسه را به زندگی روزمره خود بیاورید. تنظیمات گوشی را به فرانسه تغییر دهید، اخبار France 24 را تماشا کنید، و پادکست‌های فرانسوی گوش دهید. حتی اگر متوجه نشوید، مغز شما به تدریج با ریتم و آهنگ زبان آشنا می‌شود." data-en="Bring French into your daily life. Change your phone settings to French, watch France 24 news, and listen to French podcasts. Even if you don't understand, your brain gradually becomes familiar with the rhythm and melody of the language." data-fr="Intégrez le français dans votre vie quotidienne. Changez les paramètres de votre téléphone en français, regardez les actualités de France 24 et écoutez des podcasts français. Même si vous ne comprenez pas, votre cerveau se familiarise progressivement avec le rythme et la mélodie de la langue.">زبان فرانسه را به زندگی روزمره خود بیاورید. تنظیمات گوشی را به فرانسه تغییر دهید، اخبار France 24 را تماشا کنید، و پادکست‌های فرانسوی گوش دهید. حتی اگر متوجه نشوید، مغز شما به تدریج با ریتم و آهنگ زبان آشنا می‌شود.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۲ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۲</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تکنیک Shadowing (سایه‌سازی)" data-en="Shadowing Technique" data-fr="Technique du Shadowing">تکنیک Shadowing (سایه‌سازی)</h4>
+                                <p class="text-secondary" data-fa="یک ویدیو یا پادکست فرانسوی انتخاب کنید و همزمان با گوینده تکرار کنید. این تکنیک لهجه، تلفظ و روانی صحبت شما را به طرز چشمگیری بهبود می‌بخشد. روزی فقط ۱۰ دقیقه کافی است." data-en="Choose a French video or podcast and repeat simultaneously with the speaker. This technique dramatically improves your accent, pronunciation, and fluency. Just 10 minutes a day is enough." data-fr="Choisissez une vidéo ou un podcast en français et répétez en même temps que le locuteur. Cette technique améliore considérablement votre accent, votre prononciation et votre fluidité. Seulement 10 minutes par jour suffisent.">یک ویدیو یا پادکست فرانسوی انتخاب کنید و همزمان با گوینده تکرار کنید. این تکنیک لهجه، تلفظ و روانی صحبت شما را به طرز چشمگیری بهبود می‌بخشد. روزی فقط ۱۰ دقیقه کافی است.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۳ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۳</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="یادگیری با فلش کارت (Spaced Repetition)" data-en="Flashcards with Spaced Repetition" data-fr="Cartes Mémoire avec Répétition Espacée">یادگیری با فلش کارت (Spaced Repetition)</h4>
+                                <p class="text-secondary" data-fa="از اپلیکیشن‌هایی مثل Anki یا Quizlet استفاده کنید. کلمات جدید را روی فلش کارت بنویسید و با سیستم تکرار فاصله‌دار مرور کنید. این روش علمی، ماندگاری کلمات در حافظه بلندمدت را تا ۳۰۰٪ افزایش می‌دهد." data-en="Use apps like Anki or Quizlet. Write new words on flashcards and review them with the spaced repetition system. This scientific method increases long-term word retention by up to 300%." data-fr="Utilisez des applications comme Anki ou Quizlet. Écrivez de nouveaux mots sur des cartes mémoire et révisez-les avec le système de répétition espacée. Cette méthode scientifique augmente la rétention des mots à long terme jusqu'à 300%.">از اپلیکیشن‌هایی مثل Anki یا Quizlet استفاده کنید. کلمات جدید را روی فلش کارت بنویسید و با سیستم تکرار فاصله‌دار مرور کنید. این روش علمی، ماندگاری کلمات در حافظه بلندمدت را تا ۳۰۰٪ افزایش می‌دهد.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۴ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۴</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="صحبت کردن از روز اول" data-en="Speak from Day One" data-fr="Parler dès le Premier Jour">صحبت کردن از روز اول</h4>
+                                <p class="text-secondary" data-fa="منتظر «آماده شدن» نمانید! از همان روز اول شروع به صحبت کردن کنید، حتی اگر فقط چند کلمه بلد باشید. از اپلیکیشن‌های تبادل زبان مثل HelloTalk یا Tandem استفاده کنید و با فرانسوی‌زبان‌ها مکالمه کنید." data-en="Don't wait to be 'ready'! Start speaking from day one, even if you only know a few words. Use language exchange apps like HelloTalk or Tandem and converse with French speakers." data-fr="N'attendez pas d'être « prêt » ! Commencez à parler dès le premier jour, même si vous ne connaissez que quelques mots. Utilisez des applications d'échange linguistique comme HelloTalk ou Tandem et conversez avec des francophones.">منتظر «آماده شدن» نمانید! از همان روز اول شروع به صحبت کردن کنید، حتی اگر فقط چند کلمه بلد باشید. از اپلیکیشن‌های تبادل زبان مثل HelloTalk یا Tandem استفاده کنید و با فرانسوی‌زبان‌ها مکالمه کنید.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۵ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۵</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تماشای فیلم و سریال فرانسوی" data-en="Watch French Movies & Series" data-fr="Regarder des Films et Séries Français">تماشای فیلم و سریال فرانسوی</h4>
+                                <p class="text-secondary" data-fa="فیلم‌ها را اول با زیرنویس فارسی، بعد با زیرنویس فرانسه، و در نهایت بدون زیرنویس تماشا کنید. سریال‌هایی مثل Lupin، Dix pour cent و Le Bureau des Légendes عالی هستند." data-en="Watch movies first with Persian subtitles, then with French subtitles, and finally without subtitles. Series like Lupin, Dix pour cent, and Le Bureau des Légendes are excellent." data-fr="Regardez les films d'abord avec des sous-titres persans, puis avec des sous-titres français, et enfin sans sous-titres. Des séries comme Lupin, Dix pour cent et Le Bureau des Légendes sont excellentes.">فیلم‌ها را اول با زیرنویس فارسی، بعد با زیرنویس فرانسه، و در نهایت بدون زیرنویس تماشا کنید. سریال‌هایی مثل Lupin، Dix pour cent و Le Bureau des Légendes عالی هستند.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۶ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۶</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="یادگیری عبارات، نه فقط کلمات" data-en="Learn Phrases, Not Just Words" data-fr="Apprendre des Phrases, Pas Seulement des Mots">یادگیری عبارات، نه فقط کلمات</h4>
+                                <p class="text-secondary" data-fa="به جای حفظ کردن کلمات تکی، عبارات کامل و کاربردی یاد بگیرید. مثلاً به جای یادگیری کلمه «manger» (خوردن)، عبارت «Je voudrais manger...» را یاد بگیرید. این روش گرامر را هم به صورت طبیعی به شما می‌آموزد." data-en="Instead of memorizing single words, learn complete, useful phrases. For example, instead of learning 'manger' (to eat), learn the phrase 'Je voudrais manger...' This method also teaches you grammar naturally." data-fr="Au lieu de mémoriser des mots isolés, apprenez des phrases complètes et utiles. Par exemple, au lieu d'apprendre 'manger', apprenez la phrase 'Je voudrais manger...' Cette méthode vous enseigne aussi la grammaire naturellement.">به جای حفظ کردن کلمات تکی، عبارات کامل و کاربردی یاد بگیرید. مثلاً به جای یادگیری کلمه «manger» (خوردن)، عبارت «Je voudrais manger...» را یاد بگیرید. این روش گرامر را هم به صورت طبیعی به شما می‌آموزد.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۷ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۷</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="نوشتن دفترچه خاطرات به فرانسه" data-en="Write a Diary in French" data-fr="Écrire un Journal en Français">نوشتن دفترچه خاطرات به فرانسه</h4>
+                                <p class="text-secondary" data-fa="هر شب ۵ دقیقه وقت بگذارید و اتفاقات روزتان را به فرانسه بنویسید. نگران اشتباهات نباشید! می‌توانید از اپلیکیشن‌هایی مثل LangCorrect استفاده کنید تا نوشته‌هایتان توسط Nativeها تصحیح شود." data-en="Spend 5 minutes every night writing about your day in French. Don't worry about mistakes! You can use apps like LangCorrect to have your writing corrected by native speakers." data-fr="Passez 5 minutes chaque soir à écrire sur votre journée en français. Ne vous inquiétez pas des erreurs ! Vous pouvez utiliser des applications comme LangCorrect pour faire corriger vos écrits par des natifs.">هر شب ۵ دقیقه وقت بگذارید و اتفاقات روزتان را به فرانسه بنویسید. نگران اشتباهات نباشید! می‌توانید از اپلیکیشن‌هایی مثل LangCorrect استفاده کنید تا نوشته‌هایتان توسط Nativeها تصحیح شود.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۸ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۸</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="استفاده از موسیقی فرانسوی" data-en="Use French Music" data-fr="Utiliser la Musique Française">استفاده از موسیقی فرانسوی</h4>
+                                <p class="text-secondary" data-fa="آهنگ‌های فرانسوی گوش دهید و متن آنها را دنبال کنید. خواننده‌هایی مثل Stromae، Angèle، Édith Piaf و Zaz انتخاب‌های عالی هستند. متن آهنگ‌ها را از سایت‌هایی مثل Genius پیدا کنید و همخوانی کنید." data-en="Listen to French songs and follow their lyrics. Artists like Stromae, Angèle, Édith Piaf, and Zaz are excellent choices. Find lyrics on sites like Genius and sing along." data-fr="Écoutez des chansons françaises et suivez leurs paroles. Des artistes comme Stromae, Angèle, Édith Piaf et Zaz sont d'excellents choix. Trouvez les paroles sur des sites comme Genius et chantez.">آهنگ‌های فرانسوی گوش دهید و متن آنها را دنبال کنید. خواننده‌هایی مثل Stromae، Angèle، Édith Piaf و Zaz انتخاب‌های عالی هستند. متن آهنگ‌ها را از سایت‌هایی مثل Genius پیدا کنید و همخوانی کنید.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۹ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۰۹</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="تنظیم اهداف کوچک و قابل دستیابی" data-en="Set Small, Achievable Goals" data-fr="Fixer de Petits Objectifs Atteignables">تنظیم اهداف کوچک و قابل دستیابی</h4>
+                                <p class="text-secondary" data-fa="به جای هدف بزرگ «مسلط شدن به فرانسه»، اهداف کوچک هفتگی تعیین کنید. مثلاً: «این هفته ۲۰ کلمه جدید یاد بگیرم» یا «بتوانم خودم را به فرانسه معرفی کنم». موفقیت‌های کوچک انگیزه شما را حفظ می‌کنند." data-en="Instead of the big goal 'become fluent in French', set small weekly goals. For example: 'learn 20 new words this week' or 'be able to introduce myself in French'. Small successes keep you motivated." data-fr="Au lieu du grand objectif « devenir bilingue en français », fixez de petits objectifs hebdomadaires. Par exemple : « apprendre 20 nouveaux mots cette semaine » ou « pouvoir me présenter en français ». Les petits succès vous gardent motivé.">به جای هدف بزرگ «مسلط شدن به فرانسه»، اهداف کوچک هفتگی تعیین کنید. مثلاً: «این هفته ۲۰ کلمه جدید یاد بگیرم» یا «بتوانم خودم را به فرانسه معرفی کنم». موفقیت‌های کوچک انگیزه شما را حفظ می‌کنند.</p>
+                            </div>
+                        </div>
+
+                        <!-- ترفند ۱۰ -->
+                        <div class="blog-tip-card">
+                            <div class="tip-number">۱۰</div>
+                            <div class="tip-content">
+                                <h4 class="fw-bold" data-fa="پیدا کردن یک پارتنر زبان" data-en="Find a Language Partner" data-fr="Trouver un Partenaire Linguistique">پیدا کردن یک پارتنر زبان</h4>
+                                <p class="text-secondary" data-fa="داشتن یک دوست که با هم فرانسه تمرین کنید، معجزه می‌کند! می‌توانید از طریق کلاس‌های ما یک هم‌کلاسی پیدا کنید یا از اپلیکیشن‌های تبادل زبان استفاده کنید. رقابت دوستانه و حمایت متقابل، یادگیری را لذت‌بخش‌تر می‌کند." data-en="Having a friend to practice French with works wonders! You can find a classmate through our courses or use language exchange apps. Friendly competition and mutual support make learning more enjoyable." data-fr="Avoir un ami avec qui pratiquer le français fait des merveilles ! Vous pouvez trouver un camarade de classe via nos cours ou utiliser des applications d'échange linguistique. La compétition amicale et le soutien mutuel rendent l'apprentissage plus agréable.">داشتن یک دوست که با هم فرانسه تمرین کنید، معجزه می‌کند! می‌توانید از طریق کلاس‌های ما یک هم‌کلاسی پیدا کنید یا از اپلیکیشن‌های تبادل زبان استفاده کنید. رقابت دوستانه و حمایت متقابل، یادگیری را لذت‌بخش‌تر می‌کند.</p>
+                            </div>
+                        </div>
+
+                        <div class="blog-tip-box mt-5">
+                            <h6 class="fw-bold" data-fa="💡 نتیجه‌گیری:" data-en="💡 Conclusion:" data-fr="💡 Conclusion :">💡 نتیجه‌گیری:</h6>
+                            <p class="text-secondary mb-0" data-fa="یادگیری زبان فرانسه یک ماراتن است، نه دو سرعت! با ترکیب این ۱۰ ترفند در برنامه روزانه خود، می‌توانید سرعت یادگیری را به طور چشمگیری افزایش دهید. مهم‌ترین نکته: هر روز تمرین کنید، حتی اگر فقط ۱۵ دقیقه باشد. استمرار از شدت مهم‌تر است!" data-en="Learning French is a marathon, not a sprint! By incorporating these 10 tricks into your daily routine, you can dramatically increase your learning speed. The most important tip: practice every day, even if it's just 15 minutes. Consistency matters more than intensity!" data-fr="Apprendre le français est un marathon, pas un sprint ! En intégrant ces 10 astuces dans votre routine quotidienne, vous pouvez augmenter considérablement votre vitesse d'apprentissage. Le conseil le plus important : pratiquez tous les jours, même si ce n'est que 15 minutes. La régularité compte plus que l'intensité !">یادگیری زبان فرانسه یک ماراتن است، نه دو سرعت! با ترکیب این ۱۰ ترفند در برنامه روزانه خود، می‌توانید سرعت یادگیری را به طور چشمگیری افزایش دهید. مهم‌ترین نکته: هر روز تمرین کنید، حتی اگر فقط ۱۵ دقیقه باشد. استمرار از شدت مهم‌تر است!</p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#یادگیری_سریع</a>
+                        <a href="#" class="tag-link">#ترفند</a>
+                        <a href="#" class="tag-link">#مکالمه</a>
+                        <a href="#" class="tag-link">#متد_آموزشی</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">👩‍🏫</div>
+                            <div>
+                                <h6 class="fw-bold" data-fa="دکتر سارا احمدی" data-en="Dr. Sara Ahmadi" data-fr="Dr. Sara Ahmadi">دکتر سارا احمدی</h6>
+                                <p class="text-secondary small" data-fa="مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص آموزش گرامر و آمادگی آزمون‌های DELF/DALF." data-en="Senior French instructor with 10 years of teaching experience. Specialist in grammar and DELF/DALF exam preparation." data-fr="Instructeur principal de français avec 10 ans d'expérience. Spécialiste en grammaire et préparation aux examens DELF/DALF.">مدرس ارشد زبان فرانسه با ۱۰ سال سابقه تدریس. متخصص آموزش گرامر و آمادگی آزمون‌های DELF/DALF.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+        <!-- ===== بنر بالای صفحه ===== -->
+    <section class="page-banner d-flex align-items-center" data-aos="fade-down">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3" data-fa="دوره‌های آموزشی" data-en="Our Courses" data-fr="Nos Cours">دوره‌های آموزشی</h1>
+            <p class="lead text-secondary" data-fa="از مبتدی تا پیشرفته، مسیر یادگیری تو مشخصه" data-en="From beginner to advanced, your learning path is clear" data-fr="Du débutant à l'avancé, votre parcours d'apprentissage est clair">از مبتدی تا پیشرفته، مسیر یادگیری تو مشخصه</p>
+        </div>
+    </section>
+
+    <!-- ===== زبان فرانسه - دوره اصلی ===== -->
+    <section class="course-featured py-5">
+        <div class="container">
+            <div class="text-center mb-4" data-aos="fade-up">
+                <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill">🇫🇷</span>
+                <h2 class="fw-bold" data-fa="دوره‌های تخصصی زبان فرانسه" data-en="Specialized French Courses" data-fr="Cours Spécialisés de Français">دوره‌های تخصصی زبان فرانسه</h2>
+                <p class="text-secondary" data-fa="از مکالمه روزمره تا آمادگی آزمون‌های بین‌المللی" data-en="From daily conversation to international exam preparation" data-fr="De la conversation quotidienne à la préparation aux examens internationaux">از مکالمه روزمره تا آمادگی آزمون‌های بین‌المللی</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- دوره ۱: فرانسه مقدماتی -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="course-card-detail">
+                        <div class="course-card-header french-beginner">
+                            <div class="course-level-badge" data-fa="A1 - A2" data-en="A1 - A2" data-fr="A1 - A2">A1 - A2</div>
+                            <div class="course-card-icon">🇫🇷</div>
+                        </div>
+                        <div class="course-card-body">
+                            <h4 class="fw-bold" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français Débutant">فرانسه مقدماتی</h4>
+                            <p class="text-secondary small" data-fa="شروع از صفر! آشنایی با الفبا، تلفظ، مکالمات ساده روزمره و گرامر پایه. مناسب کسانی که هیچ آشنایی با زبان فرانسه ندارند." data-en="Start from zero! Learn the alphabet, pronunciation, simple daily conversations, and basic grammar. Perfect for absolute beginners." data-fr="Commencez à zéro ! Apprenez l'alphabet, la prononciation, les conversations quotidiennes simples et la grammaire de base. Parfait pour les débutants complets.">شروع از صفر! آشنایی با الفبا، تلفظ، مکالمات ساده روزمره و گرامر پایه. مناسب کسانی که هیچ آشنایی با زبان فرانسه ندارند.</p>
+                            
+                            <div class="course-features-list">
+                                <span data-fa="📚 ۴۰ جلسه آموزشی" data-en="📚 40 Sessions" data-fr="📚 40 séances">📚 ۴۰ جلسه آموزشی</span>
+                                <span data-fa="⏰ ۲ ماه" data-en="⏰ 2 Months" data-fr="⏰ 2 mois">⏰ ۲ ماه</span>
+                                <span data-fa="👥 کلاس ۸ نفره" data-en="👥 8 Students" data-fr="👥 8 étudiants">👥 کلاس ۸ نفره</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="fw-bold text-primary fs-5" data-fa="۱,۲۰۰,۰۰۰ تومان" data-en="1,200,000 Tomans" data-fr="1,200,000 tomans">۱,۲۰۰,۰۰۰</span>
+                                    <small class="text-secondary"> تومان</small>
+                                </div>
+                                <a href="register-course.html?course=french-beginner" class="btn btn-primary btn-sm rounded-pill px-4" data-fa="ثبت‌نام" data-en="Enroll" data-fr="S'inscrire">ثبت‌نام</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دوره ۲: فرانسه متوسط -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="course-card-detail">
+                        <div class="course-card-header french-intermediate">
+                            <div class="course-level-badge" data-fa="B1 - B2" data-en="B1 - B2" data-fr="B1 - B2">B1 - B2</div>
+                            <div class="course-card-icon">🥐</div>
+                        </div>
+                        <div class="course-card-body">
+                            <h4 class="fw-bold" data-fa="فرانسه متوسط" data-en="Intermediate French" data-fr="Français Intermédiaire">فرانسه متوسط</h4>
+                            <p class="text-secondary small" data-fa="تقویت مکالمه، درک مطلب، نوشتار و گرامر پیشرفته‌تر. مباحث فرهنگی، فیلم و موسیقی فرانسوی. آمادگی برای سفر و زندگی در کشورهای فرانسوی‌زبان." data-en="Improve conversation, comprehension, writing, and advanced grammar. French culture, cinema, and music. Prepare for travel and life in French-speaking countries." data-fr="Améliorez la conversation, la compréhension, l'écriture et la grammaire avancée. Culture, cinéma et musique française. Préparez-vous aux voyages et à la vie dans les pays francophones.">تقویت مکالمه، درک مطلب، نوشتار و گرامر پیشرفته‌تر. مباحث فرهنگی، فیلم و موسیقی فرانسوی. آمادگی برای سفر و زندگی در کشورهای فرانسوی‌زبان.</p>
+                            
+                            <div class="course-features-list">
+                                <span data-fa="📚 ۵۰ جلسه آموزشی" data-en="📚 50 Sessions" data-fr="📚 50 séances">📚 ۵۰ جلسه آموزشی</span>
+                                <span data-fa="⏰ ۳ ماه" data-en="⏰ 3 Months" data-fr="⏰ 3 mois">⏰ ۳ ماه</span>
+                                <span data-fa="👥 کلاس ۶ نفره" data-en="👥 6 Students" data-fr="👥 6 étudiants">👥 کلاس ۶ نفره</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="fw-bold text-primary fs-5" data-fa="۱,۶۰۰,۰۰۰ تومان" data-en="1,600,000 Tomans" data-fr="1,600,000 tomans">۱,۶۰۰,۰۰۰</span>
+                                    <small class="text-secondary"> تومان</small>
+                                </div>
+                                <a href="register-course.html?course=french-intermediate" class="btn btn-primary btn-sm rounded-pill px-4" data-fa="ثبت‌نام" data-en="Enroll" data-fr="S'inscrire">ثبت‌نام</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دوره ۳: فرانسه پیشرفته -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="course-card-detail">
+                        <div class="course-card-header french-advanced">
+                            <div class="course-level-badge" data-fa="C1 - C2" data-en="C1 - C2" data-fr="C1 - C2">C1 - C2</div>
+                            <div class="course-card-icon">🗼</div>
+                        </div>
+                        <div class="course-card-body">
+                            <h4 class="fw-bold" data-fa="فرانسه پیشرفته" data-en="Advanced French" data-fr="Français Avancé">فرانسه پیشرفته</h4>
+                            <p class="text-secondary small" data-fa="تسلط کامل بر زبان فرانسه! مکالمه روان، نگارش حرفه‌ای، ادبیات فرانسه و اصطلاحات تخصصی. مناسب افرادی که قصد تحصیل یا کار در فرانسه را دارند." data-en="Master French completely! Fluent conversation, professional writing, French literature, and specialized terminology. Ideal for those planning to study or work in France." data-fr="Maîtrisez complètement le français ! Conversation fluide, écriture professionnelle, littérature française et terminologie spécialisée. Idéal pour ceux qui envisagent d'étudier ou de travailler en France.">تسلط کامل بر زبان فرانسه! مکالمه روان، نگارش حرفه‌ای، ادبیات فرانسه و اصطلاحات تخصصی. مناسب افرادی که قصد تحصیل یا کار در فرانسه را دارند.</p>
+                            
+                            <div class="course-features-list">
+                                <span data-fa="📚 ۶۰ جلسه آموزشی" data-en="📚 60 Sessions" data-fr="📚 60 séances">📚 ۶۰ جلسه آموزشی</span>
+                                <span data-fa="⏰ ۴ ماه" data-en="⏰ 4 Months" data-fr="⏰ 4 mois">⏰ ۴ ماه</span>
+                                <span data-fa="👥 کلاس ۴ نفره" data-en="👥 4 Students" data-fr="👥 4 étudiants">👥 کلاس ۴ نفره</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="fw-bold text-primary fs-5" data-fa="۲,۰۰۰,۰۰۰ تومان" data-en="2,000,000 Tomans" data-fr="2,000,000 tomans">۲,۰۰۰,۰۰۰</span>
+                                    <small class="text-secondary"> تومان</small>
+                                </div>
+                                <a href="register-course.html?course=french-advanced" class="btn btn-primary btn-sm rounded-pill px-4" data-fa="ثبت‌نام" data-en="Enroll" data-fr="S'inscrire">ثبت‌نام</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== زبان انگلیسی - دوره دوم ===== -->
+    <section class="course-secondary py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4" data-aos="fade-up">
+                <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill">🇬🇧</span>
+                <h2 class="fw-bold" data-fa="دوره‌های زبان انگلیسی" data-en="English Courses" data-fr="Cours d'Anglais">دوره‌های زبان انگلیسی</h2>
+                <p class="text-secondary" data-fa="از پایه تا آیلتس، کنار شما هستیم" data-en="From basics to IELTS, we're with you" data-fr="Des bases à l'IELTS, nous sommes avec vous">از پایه تا آیلتس، کنار شما هستیم</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- انگلیسی عمومی -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="course-card-horizontal">
+                        <div class="course-horiz-icon bg-primary-subtle text-primary">
+                            <i class="bi bi-chat-square-text fs-2"></i>
+                        </div>
+                        <div class="course-horiz-content">
+                            <span class="badge bg-primary mb-2" data-fa="مبتدی تا پیشرفته" data-en="Beginner to Advanced" data-fr="Débutant à Avancé">مبتدی تا پیشرفته</span>
+                            <h5 class="fw-bold" data-fa="انگلیسی عمومی" data-en="General English" data-fr="Anglais Général">انگلیسی عمومی</h5>
+                            <p class="text-secondary small" data-fa="۴ ترم فشرده، هر ترم ۲۰ جلسه. مکالمه، گرامر و درک مطلب" data-en="4 intensive terms, 20 sessions each. Conversation, grammar & comprehension" data-fr="4 trimestres intensifs, 20 séances chacun. Conversation, grammaire et compréhension">۴ ترم فشرده، هر ترم ۲۰ جلسه. مکالمه، گرامر و درک مطلب</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary" data-fa="۱,۰۰۰,۰۰۰ تومان" data-en="1,000,000 Tomans" data-fr="1,000,000 tomans">۱,۰۰۰,۰۰۰ تومان</span>
+                                <a href="register-course.html" class="btn btn-sm btn-outline-primary rounded-pill" data-fa="ثبت‌نام" data-en="Enroll" data-fr="S'inscrire">ثبت‌نام</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== جدول مقایسه ===== -->
+    <section class="comparison-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold" data-fa="کدام دوره برای من مناسب است؟" data-en="Which Course Is Right for Me?" data-fr="Quel cours me convient le mieux ?">کدام دوره برای من مناسب است؟</h2>
+                <p class="text-secondary" data-fa="مقایسه دوره‌ها و انتخاب بهترین گزینه" data-en="Compare courses and choose the best option" data-fr="Comparez les cours et choisissez la meilleure option">مقایسه دوره‌ها و انتخاب بهترین گزینه</p>
+            </div>
+
+            <div class="table-responsive" data-aos="fade-up">
+                <table class="table comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-fa="ویژگی" data-en="Feature" data-fr="Caractéristique">ویژگی</th>
+                            <th class="text-center" data-fa="مقدماتی" data-en="Beginner" data-fr="Débutant">مقدماتی</th>
+                            <th class="text-center" data-fa="متوسط" data-en="Intermediate" data-fr="Intermédiaire">متوسط</th>
+                            <th class="text-center highlight-col" data-fa="پیشرفته" data-en="Advanced" data-fr="Avancé">پیشرفته</th>
+                            <th class="text-center" data-fa="آمادگی آزمون" data-en="Exam Prep" data-fr="Prépa Examen">آمادگی آزمون</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-fa="تعداد جلسات" data-en="Sessions" data-fr="Séances">تعداد جلسات</td>
+                            <td class="text-center">۴۰</td>
+                            <td class="text-center">۵۰</td>
+                            <td class="text-center highlight-col">۶۰</td>
+                            <td class="text-center">۳۰</td>
+                        </tr>
+                        <tr>
+                            <td data-fa="مدت دوره" data-en="Duration" data-fr="Durée">مدت دوره</td>
+                            <td class="text-center" data-fa="۲ ماه" data-en="2 Months" data-fr="2 mois">۲ ماه</td>
+                            <td class="text-center" data-fa="۳ ماه" data-en="3 Months" data-fr="3 mois">۳ ماه</td>
+                            <td class="text-center highlight-col" data-fa="۴ ماه" data-en="4 Months" data-fr="4 mois">۴ ماه</td>
+                            <td class="text-center" data-fa="۱.۵ ماه" data-en="1.5 Months" data-fr="1,5 mois">۱.۵ ماه</td>
+                        </tr>
+                        <tr>
+                            <td data-fa="تعداد دانشجو" data-en="Class Size" data-fr="Taille de classe">تعداد دانشجو</td>
+                            <td class="text-center">۸</td>
+                            <td class="text-center">۶</td>
+                            <td class="text-center highlight-col">۴</td>
+                            <td class="text-center">۱</td>
+                        </tr>
+                        <tr>
+                            <td data-fa="استاد Native" data-en="Native Teacher" data-fr="Professeur natif">استاد Native</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center highlight-col">✅</td>
+                            <td class="text-center">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-fa="پشتیبانی ۲۴/۷" data-en="24/7 Support" data-fr="Support 24/7">پشتیبانی ۲۴/۷</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center highlight-col">✅</td>
+                            <td class="text-center">✅</td>
+                        </tr>
+                        <tr>
+                            <td data-fa="مدرک معتبر" data-en="Certificate" data-fr="Certificat">مدرک معتبر</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center">✅</td>
+                            <td class="text-center highlight-col">✅</td>
+                            <td class="text-center">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa="پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en="Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>

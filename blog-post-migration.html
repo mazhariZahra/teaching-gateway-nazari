@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Gateway Nazari</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    
+    <!-- Bootstrap 5.3 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- استایل خودمون -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== نوبار ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-translate me-2"></i>Teaching Gateway Nazari
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" data-fa="خانه" data-en="Home" data-fr="Accueil">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-fa="درباره ما" data-en="About" data-fr="À propos">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-fa="تماس" data-en="Contact" data-fr="Contact">تماس</a>
+                    </li>
+                </ul>
+                
+                <!-- دکمه تغییر زبان -->
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="langToggleBtn">
+                        🇮🇷 فارسی
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fa')"> 🇮🇷 فارسی</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">🇫🇷 Français</a></li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn-primary rounded-pill px-4 shadow-sm" data-fa="ورود / ثبت‌نام" data-en="Login / Register" data-fr="Connexion  /  Inscription">ورود / ثبت‌نام</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== بنر مقاله ===== -->
+    <section class="blog-banner" data-aos="fade-down">
+        <div class="blog-banner-image">
+            <img src="images/blog/Guide complet.png" alt="Blog Post" class="blog-banner-img">
+            <div class="blog-banner-overlay"></div>
+            <div class="blog-banner-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center text-white">
+                            <span class="badge bg-success mb-3 px-3 py-2 rounded-pill" data-fa="مهاجرت" data-en="Immigration" data-fr="Immigration">مهاجرت</span>
+                            <h1 class="fw-bold mb-3" data-fa="راهنمای کامل برای مهاجرت تحصیلی به فرانسه در ۲۰۲۵" data-en="Complete Guide to Studying in France in 2025" data-fr="Guide Complet pour Étudier en France en 2025">راهنمای کامل برای مهاجرت تحصیلی به فرانسه در ۲۰۲۵</h1>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <span>🧑‍💼 <span data-fa="پیر مارتین" data-en="Pierre Martin" data-fr="Pierre Martin">پیر مارتین</span></span>
+                                <span>📅 ۸ تیر ۱۴۰۴</span>
+                                <span>⏱️ <span data-fa="۱۵ دقیقه مطالعه" data-en="15 min read" data-fr="15 min de lecture">۱۵ دقیقه مطالعه</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== محتوای مقاله ===== -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- متن مقاله -->
+                    <div class="blog-article">
+                        <p class="lead text-secondary mb-4" data-fa="فرانسه هر ساله میزبان بیش از ۳۷۰,۰۰۰ دانشجوی بین‌المللی است و چهارمین مقصد محبوب تحصیلی در جهان محسوب می‌شود. دانشگاه‌های معتبر، هزینه‌های مقرون‌به‌صرفه نسبت به کشورهای انگلیسی‌زبان، و فرهنگ غنی، فرانسه را به گزینه‌ای ایده‌آل برای ادامه تحصیل تبدیل کرده است. در این راهنما، تمام مراحل مهاجرت تحصیلی به فرانسه در سال ۲۰۲۵ را قدم به قدم توضیح می‌دهیم." data-en="France hosts over 370,000 international students annually and is the fourth most popular study destination worldwide. Prestigious universities, affordable costs compared to English-speaking countries, and rich culture make France an ideal choice for continuing education. In this guide, we explain all steps of studying in France in 2025 step by step." data-fr="La France accueille plus de 370 000 étudiants internationaux chaque année et est la quatrième destination d'études la plus populaire au monde. Des universités prestigieuses, des coûts abordables par rapport aux pays anglophones et une culture riche font de la France un choix idéal pour poursuivre vos études. Dans ce guide, nous expliquons toutes les étapes pour étudier en France en 2025.">فرانسه هر ساله میزبان بیش از ۳۷۰,۰۰۰ دانشجوی بین‌المللی است و چهارمین مقصد محبوب تحصیلی در جهان محسوب می‌شود. دانشگاه‌های معتبر، هزینه‌های مقرون‌به‌صرفه نسبت به کشورهای انگلیسی‌زبان، و فرهنگ غنی، فرانسه را به گزینه‌ای ایده‌آل برای ادامه تحصیل تبدیل کرده است. در این راهنما، تمام مراحل مهاجرت تحصیلی به فرانسه در سال ۲۰۲۵ را قدم به قدم توضیح می‌دهیم.</p>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="مرحله ۱: انتخاب رشته و دانشگاه" data-en="Step 1: Choose Your Field & University" data-fr="Étape 1 : Choisir Votre Filière et Université">مرحله ۱: انتخاب رشته و دانشگاه</h3>
+                        
+                        <p class="text-secondary" data-fa="اولین و مهم‌ترین قدم، انتخاب رشته و دانشگاه مناسب است. فرانسه دارای ۳۵۰۰ موسسه آموزش عالی در سه دسته اصلی است:" data-en="The first and most important step is choosing the right field and university. France has 3,500 higher education institutions in three main categories:" data-fr="La première et la plus importante étape est de choisir la bonne filière et la bonne université. La France compte 3 500 établissements d'enseignement supérieur répartis en trois catégories principales :">اولین و مهم‌ترین قدم، انتخاب رشته و دانشگاه مناسب است. فرانسه دارای ۳۵۰۰ موسسه آموزش عالی در سه دسته اصلی است:</p>
+
+                        <div class="blog-example-box">
+                            <h6 class="fw-bold" data-fa="🏛️ انواع موسسات آموزش عالی:" data-en="🏛️ Types of Higher Education Institutions:" data-fr="🏛️ Types d'Établissements d'Enseignement Supérieur :">🏛️ انواع موسسات آموزش عالی:</h6>
+                            <ul>
+                                <li><strong data-fa="دانشگاه‌های دولتی (Universités)" data-en="Public Universities (Universités)" data-fr="Universités Publiques">دانشگاه‌های دولتی (Universités)</strong><br><small class="text-secondary" data-fa="هزینه کم، پذیرش آسان‌تر، مناسب برای لیسانس تا دکتری" data-en="Low cost, easier admission, suitable for Bachelor's to PhD" data-fr="Coût bas, admission plus facile, adapté de la Licence au Doctorat">هزینه کم، پذیرش آسان‌تر، مناسب برای لیسانس تا دکتری</small></li>
+                                <li><strong data-fa="مدارس عالی (Grandes Écoles)" data-en="Grandes Écoles" data-fr="Grandes Écoles">مدارس عالی (Grandes Écoles)</strong><br><small class="text-secondary" data-fa="رقابتی‌ترین و معتبرترین، آزمون ورودی دارد" data-en="Most competitive and prestigious, entrance exam required" data-fr="Les plus compétitives et prestigieuses, examen d'entrée requis">رقابتی‌ترین و معتبرترین، آزمون ورودی دارد</small></li>
+                                <li><strong data-fa="مدارس تخصصی (Écoles Spécialisées)" data-en="Specialized Schools (Écoles Spécialisées)" data-fr="Écoles Spécialisées">مدارس تخصصی (Écoles Spécialisées)</strong><br><small class="text-secondary" data-fa="هنر، معماری، گردشگری و..." data-en="Art, Architecture, Tourism, etc." data-fr="Art, Architecture, Tourisme, etc.">هنر، معماری، گردشگری و...</small></li>
+                            </ul>
+                        </div>
+
+                        <div class="blog-tip-box">
+                            <h6 class="fw-bold" data-fa="💡 نکته مهم:" data-en="💡 Important Tip:" data-fr="💡 Conseil Important :">💡 نکته مهم:</h6>
+                            <p class="text-secondary mb-0" data-fa="برای مقطع لیسانس، می‌توانید از پلتفرم Parcoursup و برای مقاطع بالاتر از پلتفرم Études en France استفاده کنید. حتماً قبل از اقدام، رتبه‌بندی دانشگاه را در سایت‌هایی مثل QS Ranking بررسی کنید." data-en="For Bachelor's degrees, use the Parcoursup platform, and for higher degrees, use Études en France. Always check university rankings on sites like QS Ranking before applying." data-fr="Pour la Licence, utilisez la plateforme Parcoursup, et pour les diplômes supérieurs, utilisez Études en France. Vérifiez toujours le classement des universités sur des sites comme QS Ranking avant de postuler.">برای مقطع لیسانس، می‌توانید از پلتفرم Parcoursup و برای مقاطع بالاتر از پلتفرم Études en France استفاده کنید. حتماً قبل از اقدام، رتبه‌بندی دانشگاه را در سایت‌هایی مثل QS Ranking بررسی کنید.</p>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="مرحله ۲: مدارک مورد نیاز" data-en="Step 2: Required Documents" data-fr="Étape 2 : Documents Requis">مرحله ۲: مدارک مورد نیاز</h3>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered comparison-table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th data-fa="مدرک" data-en="Document" data-fr="Document">مدرک</th>
+                                        <th data-fa="توضیحات" data-en="Description" data-fr="Description">توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-fa="پاسپورت معتبر" data-en="Valid Passport" data-fr="Passeport Valide">پاسپورت معتبر</td>
+                                        <td data-fa="حداقل ۶ ماه اعتبار" data-en="At least 6 months validity" data-fr="Au moins 6 mois de validité">حداقل ۶ ماه اعتبار</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="ترجمه رسمی مدارک تحصیلی" data-en="Official Transcript Translation" data-fr="Traduction Officielle des Relevés de Notes">ترجمه رسمی مدارک تحصیلی</td>
+                                        <td data-fa="دیپلم، پیش‌دانشگاهی، کارشناسی" data-en="High School Diploma, Bachelor's, etc." data-fr="Diplôme d'études secondaires, Licence, etc.">دیپلم، پیش‌دانشگاهی، کارشناسی</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="مدرک زبان فرانسه" data-en="French Language Certificate" data-fr="Certificat de Langue Française">مدرک زبان فرانسه</td>
+                                        <td data-fa="DELF B2 یا DALF C1 (بسته به رشته)" data-en="DELF B2 or DALF C1 (depending on field)" data-fr="DELF B2 ou DALF C1 (selon la filière)">DELF B2 یا DALF C1 (بسته به رشته)</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="انگیزه‌نامه (Lettre de motivation)" data-en="Motivation Letter" data-fr="Lettre de Motivation">انگیزه‌نامه (Lettre de motivation)</td>
+                                        <td data-fa="توضیح دلایل انتخاب رشته و دانشگاه" data-en="Explain reasons for choosing the field & university" data-fr="Expliquer les raisons du choix de la filière et de l'université">توضیح دلایل انتخاب رشته و دانشگاه</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="توصیه‌نامه" data-en="Recommendation Letters" data-fr="Lettres de Recommandation">توصیه‌نامه</td>
+                                        <td data-fa="حداقل ۲ توصیه‌نامه از اساتید" data-en="At least 2 letters from professors" data-fr="Au moins 2 lettres de professeurs">حداقل ۲ توصیه‌نامه از اساتید</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="رزومه (CV)" data-en="Resume (CV)" data-fr="Curriculum Vitae (CV)">رزومه (CV)</td>
+                                        <td data-fa="سوابق تحصیلی، کاری و مهارت‌ها" data-en="Academic background, work experience & skills" data-fr="Parcours académique, expérience professionnelle et compétences">سوابق تحصیلی، کاری و مهارت‌ها</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="مرحله ۳: ویزای دانشجویی فرانسه" data-en="Step 3: French Student Visa" data-fr="Étape 3 : Visa Étudiant Français">مرحله ۳: ویزای دانشجویی فرانسه</h3>
+                        
+                        <p class="text-secondary" data-fa="پس از دریافت نامه پذیرش از دانشگاه، باید برای ویزای دانشجویی اقدام کنید. انواع ویزای دانشجویی فرانسه:" data-en="After receiving your university acceptance letter, you must apply for a student visa. Types of French student visas:" data-fr="Après avoir reçu votre lettre d'acceptation de l'université, vous devez demander un visa étudiant. Types de visas étudiants français :">پس از دریافت نامه پذیرش از دانشگاه، باید برای ویزای دانشجویی اقدام کنید. انواع ویزای دانشجویی فرانسه:</p>
+
+                        <div class="blog-example-box">
+                            <ul>
+                                <li><strong data-fa="VLS-TS (ویزای بلندمدت اقامت)" data-en="VLS-TS (Long-Stay Residence Visa)" data-fr="VLS-TS (Visa Long Séjour Titre de Séjour)">VLS-TS (ویزای بلندمدت اقامت)</strong><br><small class="text-secondary" data-fa="برای دوره‌های بیش از ۶ ماه، قابل تمدید" data-en="For courses over 6 months, renewable" data-fr="Pour les cours de plus de 6 mois, renouvelable">برای دوره‌های بیش از ۶ ماه، قابل تمدید</small></li>
+                                <li><strong data-fa="ویزای کوتاه‌مدت Schengen" data-en="Short-Stay Schengen Visa" data-fr="Visa Schengen Court Séjour">ویزای کوتاه‌مدت Schengen</strong><br><small class="text-secondary" data-fa="برای دوره‌های کمتر از ۳ ماه" data-en="For courses under 3 months" data-fr="Pour les cours de moins de 3 mois">برای دوره‌های کمتر از ۳ ماه</small></li>
+                            </ul>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="مرحله ۴: هزینه‌های تحصیل و زندگی" data-en="Step 4: Study & Living Costs" data-fr="Étape 4 : Coûts d'Études et de Vie">مرحله ۴: هزینه‌های تحصیل و زندگی</h3>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered comparison-table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th data-fa="نوع هزینه" data-en="Expense Type" data-fr="Type de Dépense">نوع هزینه</th>
+                                        <th data-fa="هزینه (یورو در سال)" data-en="Cost (EUR/Year)" data-fr="Coût (EUR/An)">هزینه (یورو در سال)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-fa="شهریه دانشگاه دولتی (لیسانس)" data-en="Public University Tuition (Bachelor's)" data-fr="Frais Université Publique (Licence)">شهریه دانشگاه دولتی (لیسانس)</td>
+                                        <td>€۲,۷۷۰</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="شهریه دانشگاه دولتی (فوق لیسانس)" data-en="Public University Tuition (Master's)" data-fr="Frais Université Publique (Master)">شهریه دانشگاه دولتی (فوق لیسانس)</td>
+                                        <td>€۳,۷۷۰</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="شهریه Grande École" data-en="Grande École Tuition" data-fr="Frais Grande École">شهریه Grande École</td>
+                                        <td>€۵,۰۰۰ - €۲۰,۰۰۰</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="اجاره خوابگاه دانشجویی (CROUS)" data-en="Student Housing (CROUS)" data-fr="Logement Étudiant (CROUS)">اجاره خوابگاه دانشجویی (CROUS)</td>
+                                        <td>€۲,۰۰۰ - €۴,۰۰۰</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-fa="هزینه زندگی (غذا، حمل و نقل...)" data-en="Living Expenses (Food, Transport...)" data-fr="Dépenses de Vie (Nourriture, Transport...)">هزینه زندگی (غذا، حمل و نقل...)</td>
+                                        <td>€۶,۰۰۰ - €۱۰,۰۰۰</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="fw-bold mt-5 mb-3" data-fa="مرحله ۵: کار دانشجویی در فرانسه" data-en="Step 5: Student Work in France" data-fr="Étape 5 : Travail Étudiant en France">مرحله ۵: کار دانشجویی در فرانسه</h3>
+                        
+                        <p class="text-secondary" data-fa="دانشجویان بین‌المللی مجاز به کار ۹۶۴ ساعت در سال (حدود ۲۰ ساعت در هفته) هستند. این درآمد می‌تواند به تأمین هزینه‌های زندگی کمک کند. حداقل دستمزد ساعتی در فرانسه حدود ۱۱.۵۲ یورو است." data-en="International students are allowed to work 964 hours per year (about 20 hours per week). This income can help cover living expenses. The minimum hourly wage in France is approximately €11.52." data-fr="Les étudiants internationaux sont autorisés à travailler 964 heures par an (environ 20 heures par semaine). Ce revenu peut aider à couvrir les frais de subsistance. Le salaire minimum horaire en France est d'environ 11,52 €.">دانشجویان بین‌المللی مجاز به کار ۹۶۴ ساعت در سال (حدود ۲۰ ساعت در هفته) هستند. این درآمد می‌تواند به تأمین هزینه‌های زندگی کمک کند. حداقل دستمزد ساعتی در فرانسه حدود ۱۱.۵۲ یورو است.</p>
+
+                        <div class="blog-tip-box mt-4">
+                            <h6 class="fw-bold" data-fa="💡 نکته طلایی:" data-en="💡 Golden Tip:" data-fr="💡 Astuce en Or :">💡 نکته طلایی:</h6>
+                            <p class="text-secondary mb-0" data-fa="بورسیه‌های تحصیلی متعددی برای دانشجویان ایرانی وجود دارد! از جمله بورسیه Eiffel، بورسیه‌های سفارت فرانسه (BGF) و بورسیه‌های Erasmus+. حتماً قبل از اقدام، شرایط این بورسیه‌ها را بررسی کنید." data-en="Numerous scholarships are available for Iranian students! Including the Eiffel Scholarship, French Embassy Scholarships (BGF), and Erasmus+ Scholarships. Be sure to check the requirements before applying." data-fr="De nombreuses bourses sont disponibles pour les étudiants iraniens ! Y compris la Bourse Eiffel, les Bourses de l'Ambassade de France (BGF) et les Bourses Erasmus+. Vérifiez les conditions avant de postuler.">بورسیه‌های تحصیلی متعددی برای دانشجویان ایرانی وجود دارد! از جمله بورسیه Eiffel، بورسیه‌های سفارت فرانسه (BGF) و بورسیه‌های Erasmus+. حتماً قبل از اقدام، شرایط این بورسیه‌ها را بررسی کنید.</p>
+                        </div>
+                    </div>
+
+                    <!-- برچسب‌ها -->
+                    <div class="blog-tags mt-5">
+                        <span class="fw-bold me-2" data-fa="برچسب‌ها:" data-en="Tags:" data-fr="Mots-clés :">برچسب‌ها:</span>
+                        <a href="#" class="tag-link">#مهاجرت_تحصیلی</a>
+                        <a href="#" class="tag-link">#فرانسه</a>
+                        <a href="#" class="tag-link">#ویزا</a>
+                        <a href="#" class="tag-link">#دانشگاه</a>
+                        <a href="#" class="tag-link">#بورسیه</a>
+                        <a href="#" class="tag-link">#۲۰۲۵</a>
+                    </div>
+
+                    
+
+                    <!-- نویسنده -->
+                    <div class="blog-author-box mt-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="blog-author-avatar">🧑‍💼</div>
+                            <div>
+                                <h6 class="fw-bold">Pierre Martin</h6>
+                                <p class="text-secondary small" data-fa="مشاور رسمی مهاجرت تحصیلی به فرانسه. فارغ‌التحصیل دانشگاه سوربن با ۸ سال تجربه در راهنمایی دانشجویان بین‌المللی." data-en="Official consultant for studying in France. Sorbonne University graduate with 8 years of experience guiding international students." data-fr="Consultant officiel pour les études en France. Diplômé de l'Université de la Sorbonne avec 8 ans d'expérience dans l'orientation des étudiants internationaux.">مشاور رسمی مهاجرت تحصیلی به فرانسه. فارغ‌التحصیل دانشگاه سوربن با ۸ سال تجربه در راهنمایی دانشجویان بین‌المللی.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- دکمه بازگشت -->
+                    <div class="text-center mt-5">
+                        <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-right me-2"></i>
+                            <span data-fa="بازگشت به وبلاگ" data-en="Back to Blog" data-fr="Retour au Blog">بازگشت به وبلاگ</span>
+                            <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-translate me-2"></i>Teaching Gateway Nazari</h4>
+                    <p class="text-secondary" data-fa=" پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا." data-en=" Leading in foreign language education with the world's latest methods." data-fr="un leader mondial dans l’enseignement des langues étrangères grâce aux méthodes les plus récentes">پیشرو در آموزش زبان‌های خارجی با جدیدترین متدهای روز دنیا.</p>
+                    
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دسترسی سریع" data-en="Quick Access" data-fr="Accès rapide">دسترسی سریع</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="دوره‌ها" data-en="Courses" data-fr="Cours">دوره‌ها</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-secondary text-decoration-none" data-fa="همکاری با ما" data-en="Careers" data-fr="Carrières">همکاری با ما</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-secondary text-decoration-none" data-fa="وبلاگ" data-en="Blog" data-fr="Blog">وبلاگ</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none" data-fa="سوالات متداول" data-en="FAQ" data-fr="FAQ">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="دوره‌های محبوب" data-en="Popular Courses" data-fr="Cours populaires">دوره‌های محبوب</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="انگلیسی فشرده" data-en="Intensive English" data-fr="Anglais intensif">انگلیسی فشرده</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آیلتس ۷+" data-en="IELTS 7+" data-fr="IELTS 7">آیلتس ۷+</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-secondary text-decoration-none" data-fa="آلمانی مهاجرت" data-en="German for Migration" data-fr="Immigration allemande">آلمانی مهاجرت</a></li>
+                        <li><a href="courses.html" class="text-secondary text-decoration-none" data-fa="فرانسه مقدماتی" data-en="Beginner French" data-fr="Français débutant">فرانسه مقدماتی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3" data-fa="خبرنامه" data-en="Newsletter" data-fr="Newsletter">خبرنامه</h6>
+                    <p class="text-secondary small" data-fa="برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید." data-en="Subscribe for discounts and new course announcements." data-fr="Inscrivez-vous pour recevoir des informations sur les réductions et les nouveaux cours">برای اطلاع از تخفیف‌ها و دوره‌های جدید عضو شوید.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" data-fa-placeholder="ایمیل شما" data-en-placeholder="Your Email" data-fr-placeholder="votre email" placeholder="ایمیل شما" id="newsletterEmail">
+                        <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== نمادهای اعتبار ===== -->
+            <div class="trust-badges mt-4">
+                <div class="trust-badges-container">
+                    <div class="trust-badge-item">
+                        <a href="https://trusted.ir/your-site" target="_blank">
+                            <img src="images/enamad.jpg" alt="نماد اعتماد الکترونیکی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نماد اعتماد الکترونیکی" data-en="E-Trust Symbol" data-fr="Symbole de Confiance Électronique">نماد اعتماد الکترونیکی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://evand.ir/your-site" target="_blank">
+                            <img src="images/evand.png" alt="اتحادیه کسب و کارهای مجازی" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="اتحادیه کسب و کارهای مجازی" data-en="Virtual Business Union" data-fr="Union des Entreprises Virtuelles">اتحادیه کسب و کارهای مجازی</small>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <a href="https://samandehi.ir/your-site" target="_blank">
+                            <img src="images/samandehi.png" alt="نشان ملی ثبت" class="trust-badge-img">
+                        </a>
+                        <small class="text-light mt-2 d-block" data-fa="نشان ملی ثبت" data-en="National Registration Mark" data-fr="Marque d'Enregistrement Nationale">نشان ملی ثبت</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-secondary mb-0" data-fa="© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari" data-en="© 2025 All Rights Reserved | Teaching Gateway Nazari Language Academy" data-fr="© 2014 Tous droits réservés | Académie de langues Teaching Gateway Nazari">© ۱۴۰۴ تمامی حقوق محفوظ است | Teaching Gateway Nazari</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- اسکریپت خودمون -->
+    <script src="js/main.js"></script>
+</body>
+</html>
